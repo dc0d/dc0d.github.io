@@ -6,9 +6,37 @@
     <description>Recent content in Tags on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 24 Feb 2020 23:46:41 +0100</lastBuildDate>
     
 	<atom:link href="https://dc0d.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Agile</title>
+      <link>https://dc0d.github.io/tags/agile/</link>
+      <pubDate>Mon, 24 Feb 2020 23:46:41 +0100</pubDate>
+      
+      <guid>https://dc0d.github.io/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>https://dc0d.github.io/tags/tdd/</link>
+      <pubDate>Mon, 24 Feb 2020 23:46:41 +0100</pubDate>
+      
+      <guid>https://dc0d.github.io/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timeline</title>
+      <link>https://dc0d.github.io/tags/timeline/</link>
+      <pubDate>Sun, 09 Feb 2020 19:00:00 +0100</pubDate>
+      
+      <guid>https://dc0d.github.io/tags/timeline/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
