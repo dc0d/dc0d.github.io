@@ -4,8 +4,6 @@ date: 2020-02-24T23:46:41+01:00
 draft: false
 ---
 
-# Agile - Little Rambling
-
 > WIP - v0.0.1
 
 The state of things in this industry is a bit ... "complicated". Maybe having an entry point could help.
@@ -40,7 +38,7 @@ If your code is running 1000 times per second, it is providing value to the busi
 
 That is a super simplified picture. There are other aspects to it that are even more "interesting".
 
-Imagine that the code is written in a way that makes any sort of changes - from fixing a but to adding a new feature - very hard.
+Imagine that the code is written in a way that makes any sort of changes - from fixing a bug to adding a new feature - very hard.
 
 Your rival can grow in your target market 86'400'000 times per day, faster than you - if hers/his code has a better design.
 
