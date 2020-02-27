@@ -2,6 +2,7 @@
 title: "Agile - Little Rambling"
 date: 2020-02-24T23:46:41+01:00
 draft: false
+tags: ["Agile", "TDD"]
 ---
 
 > WIP - v0.0.1

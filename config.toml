@@ -27,9 +27,9 @@ title404 = "Nothing's here!"
 
 [params.assets]
 favicon = "favicon.ico"
-customCSS = ["css/custom.css"]
-customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+# customCSS = ["css/custom.css"]
+# customJS = ["js/custom.js"]
+gopher = "images/kash.png" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
@@ -48,7 +48,7 @@ showReadingTime = true
 showLastmod = true
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
-hideMainMenu = false
+hideMainMenu = true
 rtl = false
 
 [params.sidebar]
@@ -57,7 +57,8 @@ enable = true
 [params.widgets]
 header = ["breadcrumbs"]
 homepage = ["recent_posts"]
-sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
+# sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
+sidebar = ["about","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
 
 # [params.opengraph.facebook]
@@ -66,21 +67,21 @@ footer = ["social_menu"]
 # pageID = ""
 
 [params.opengraph.twitter]
-page = "" # Twitter page username
+page = "__dc0d__" # Twitter page username
 
 [params.seo]
 # Title Separator: - – — · • * ⋆ | ~ « » < >
 titleSeparator = "•"
 
-# [params.social]
+[params.social]
 # codepen = "MunifTanjim"
-# email = "contact@example.com"
+email = "kaveh.shahbazian@gmail.com"
 # facebook = "MunifTanjim"
 # github = "MunifTanjim"
 # gitlab = "MunifTanjim"
 # instagram = "MunifTanjim"
 # linkedin = "muniftanjim"
-# twitter = "MunifTanjim"
+twitter = "__dc0d__"
 # telegram = "MunifTanjim"
 # google_scholar = "qc6CJjYAAAAJ"
 # youtube = "UCT-U0rNerYxItGcuoPX-WYA"
@@ -88,35 +89,35 @@ titleSeparator = "•"
 [params.comments]
 enable = false
 
-# Isso: https://posativ.org/isso/
-[params.comments.isso]
-enable = false
-scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+# # Isso: https://posativ.org/isso/
+# [params.comments.isso]
+# enable = false
+# scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
+# dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
-[params.comments.staticman]
-enable = true
-apiEndpoint = "https://api.staticman.net/v2/entry"
-maxDepth = 2
-username = "MunifTanjim"
-repository = "minimo"
+# [params.comments.staticman]
+# enable = true
+# apiEndpoint = "https://api.staticman.net/v2/entry"
+# maxDepth = 2
+# username = "MunifTanjim"
+# repository = "minimo"
 
-# Utterances: https://utteranc.es
-[params.comments.utterances]
-enable = false
-issueTerm = "pathname" # pathname / url / title
+# # Utterances: https://utteranc.es
+# [params.comments.utterances]
+# enable = false
+# issueTerm = "pathname" # pathname / url / title
 
-[params.comments.utterances.github]
-username = "MunifTanjim"
-repository = "minimo"
+# [params.comments.utterances.github]
+# username = "MunifTanjim"
+# repository = "minimo"
 
 [params.search]
 client = "fuse" # algolia / fuse / lunr
 
-[params.search.algolia]
-appId = ""
-indexName = ""
-searchApiKey = ""
+# [params.search.algolia]
+# appId = ""
+# indexName = ""
+# searchApiKey = ""
 
 [taxonomies]
 author = "Kaveh Shahbazian"
