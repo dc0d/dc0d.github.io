@@ -5,6 +5,8 @@ draft: false
 tags: ["Agile", "TDD"]
 ---
 
+![Agile In Practice](/images/agile-in-practice.png)
+
 > WIP - v0.0.1
 
 The state of things in this industry is a bit ... "complicated". Maybe having an entry point could help.
