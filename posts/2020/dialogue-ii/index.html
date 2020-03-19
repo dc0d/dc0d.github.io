@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='This is a work in progress. It is picturing how one could think about Software Development - one of many possible ways.     Niklas :  Something feels broken about all that code we have.   Edmond :  Maybe. But aren&rsquo;t you making money?   Niklas :  We do. But doing anything new is hard, changing or fixing stuff is hard, everything feels so slow, so ineffective.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Dialogue II • sketches'>
+<meta property='og:description' content='This is a work in progress. It is picturing how one could think about Software Development - one of many possible ways.     Niklas :  Something feels broken about all that code we have.   Edmond :  Maybe. But aren&rsquo;t you making money?   Niklas :  We do. But doing anything new is hard, changing or fixing stuff is hard, everything feels so slow, so ineffective.'>
+<meta property='og:url' content='https://dc0d.github.io/posts/2020/dialogue-ii/'>
+<meta property='og:site_name' content='sketches'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://dc0d.github.io/images/agile-in-practice.png'><meta property='article:section' content='posts'><meta property='article:tag' content='Agile'><meta property='article:tag' content='TDD'><meta property='article:published_time' content='2020-03-07T04:58:23&#43;01:00'/><meta property='article:modified_time' content='2020-03-07T04:58:23&#43;01:00'/><meta name='twitter:card' content='summary_large_image'><meta name='twitter:site' content='@__dc0d__'><meta property='twitter:image' content='https://dc0d.github.io/images/agile-in-practice.png'>
+
+<meta name="generator" content="Hugo 0.67.1" />
+
+  <title>Dialogue II • sketches</title>
+  <link rel='canonical' href='https://dc0d.github.io/posts/2020/dialogue-ii/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-71617817-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  
+
+</head>
+<body class='page type-posts has-cover has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/logo.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      sketches
+      </a>
+    </h2>
+    <div class='desc'>
+    Sketches in Software Development
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'>Tags</h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/agile/' style='font-size:1em'>Agile</a>
+      </li><li>
+        <a href='/tags/notes/' style='font-size:1em'>Notes</a>
+      </li><li>
+        <a href='/tags/tdd/' style='font-size:1em'>TDD</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button><div class='header-widgets'>
+        <div class='container'></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>sketches</p><p class='desc site-desc'>Sketches in Software Development</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Dialogue II</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2020-03-07T04:58:23&#43;01:00'>2020, Mar 07</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+12 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-normal'>
+    <img src='/images/agile-in-practice.png' alt='Agile In Practice'/>
+    
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  <blockquote>
+<p><img src="https://progress-bar.dev/1/?title=wip" alt="wip"></p>
+<ul>
+<li>This is a work in progress.</li>
+<li>It is picturing how one could think about Software Development - one of many possible ways.</li>
+</ul>
+</blockquote>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Something feels broken about all that code we have.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Maybe. But aren&rsquo;t you making money?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>We do. But doing anything new is hard, changing or fixing stuff is hard, everything feels so slow, so ineffective. We have to constantly put too much lipstick on the pig, so the customer continues to like it. I wonder if we are also constantly lying to ourselves.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>How so?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It is a constant battle. It&rsquo;s a 24/7 firefighting. Yes, there are all sorts of alarms, monitoring and automated stuff there. To be honest it feels like we are automating shit! Everything is red all the time. Nobody actually cares anymore. We all just want to be done with office hours and we pray on &ldquo;standby&quot;s.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Have you come up with any ideas about the whole thing? I mean, what&rsquo;s the cause of this?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Came up with lots of ideas! Lots of them! Even tried some of them. None worked. I ran out of ideas. What <em>is</em> Software Development anyway?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Indeed. Let&rsquo;s have at it.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<h2 id="what-is-software-development">What is Software Development?</h2>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>So, what do <em>you</em> think Software Development is?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>I am not going to say <em>writing code</em>. And I&rsquo;m sure it&rsquo;s different than <em>manufacturing</em>, right?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Yes. When a factory manufactures a car, it can be used only by one client - unless we could send that one single car into parallel universes.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>I&rsquo;ve heard it&rsquo;s been compared to gardening. You can find <em>similarities</em> for sure. But it doesn&rsquo;t make that much sense.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Yeah, no. A plant does most of the job of growing by itself. You just provide some support, like fertilizers. The code does not grow by itself no matter how much fertilizer you provide.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK, in Software Development we define and introduce something once and use it in many different places. Can we say that?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>You mean something like <em>Law-Making</em>? Well; possibly; close enough. You write the law once and every person has to comply. Except that there is no feedback mechanism to evaluate what you have made. And nobody cares these days - politics I mean. But software needs to work and we need a way to prove it&rsquo;s working properly - or at least that&rsquo;s the assumption. So, <em>what is Software Development</em>? Let&rsquo;s come back to this question later.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<h2 id="code-vs-artifact-product">Code vs Artifact (Product)</h2>
+<p>Code vs Artifact (Product) dichotomy is all wrong. We are not actually selling a product - in a 19th  Industrial Revolution sense. We are selling functionality.</p>
+<p>It&rsquo;s Code vs Execution.</p>
+<p>A Software Product is just a packaging and delivery mechanism to provide that functionality to the customer. And the customer has access to that functionality at any time she/he has a need for that functionality.</p>
+<p>That&rsquo;s how we should think about Software Development: It&rsquo;s Code vs Execution. That should be the base for the judgments that we make about each step in Software Development.</p>
+<p>A software product is like parallel mirrors. Each reflection is an execution. When the code gets inside a product, between those mirrors, you get an infinite number of <em>what you have: the code</em>. You get that&rsquo;s in the code and you benefit from it everywhere - or get hurt everywhere.</p>
+<h2 id="code-vs-execution">Code vs Execution</h2>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>But we sell a product - as an app or a service - to the customer. Isn&rsquo;t that obvious?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Yes, we do. But it is not the actual end to <em>Software Development Process</em>. In that process, the primary focus should be on <em>each execution</em> of that code - each time that product is being used. We make our decisions based on that.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<p>If your code is running 1000 times per second, it is providing value to the business - or damaging the business - 1000 times per second, 3&rsquo;600&rsquo;000 times per hour, 86&rsquo;400&rsquo;000 times per day.</p>
+<p>That is a super simplified picture. There are other aspects to it that are even more &ldquo;interesting&rdquo;.</p>
+<p>Imagine that the code is written in a way that makes any sort of changes - from fixing a bug to adding a new feature - very hard.</p>
+<p>Your rival can grow in your target market 86&rsquo;400&rsquo;000 times per day, faster than you - if her/his code has a better design and can react to changes in business requirements faster.</p>
+<p>It&rsquo;s not just about a code that just works.</p>
+<p><em>Nothing justifies putting bad code into production - a “temporary hack” or whatever</em>. And we can come up with all sorts of colorful and creative excuses - some of them are even “professional” terms, from all departments. And yes; we can push programmers - to an extent that they don’t care anymore. Kind of like an I-am-just-following-the-orders situation, you know. To make people in charge happy. Somehow like charts and diagrams which make people happy!</p>
+<p>Except: You are not deploying those charts and diagrams. You are deploying the code.</p>
+<h2 id="iron-triangle">Iron Triangle</h2>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>I have never thought of that. I mean for sure we were focusing on customer experience and happiness. But this is different.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Customer experience comes from her/his experience, every time she/he uses the product - each execution of the code. And you are making profit from each execution of that code.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Makes sense. Except that I do not see where it sits inside the Iron Triangle: <em>time</em>, <em>money</em>, <em>scope</em>.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It’s rather a <em>Golden Tetrahedron</em> when it comes to Software Development. There is also <strong>Quality</strong>.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Quality? Is it even objective when it comes to code?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It certainly does have many objective aspects - based on which, many principles and practices are based. It is a long story. We will come back to that.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>You say it in a way that sounds there are that many things to learn about Software Development!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Do you have a car?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Yes. An old BMW.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Do you think if you can build me a BMW? I mean building every bit of it?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>That needs far more than one specialty! Let alone one man!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Can you build me an Amazon? Or a Google? Or just a Notepad clone? Notepad is a pretty simple piece of software, right?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>These are totally different questions and I am not getting a nice vibe from you right now.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Indeed they are different questions. Now my question is why in the world should someone think there is nothing to learn about Software Development? Why do you think being able to use a laptop and entering some code into it and get something on the screen is Software Development? I mean; where this assumption comes from that there is nothing there to learn when it comes to Software Development? Why do you think it&rsquo;s all about coding and being a tool-expert?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>How <em>Quality</em> works anyway? In that <em>Golden Tetrahedron</em> of yours.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>When <em>Quality</em> degrades, for the same amount of money, you get less scope. It’s not possible to have a stream of features to compete in the market. Every &ldquo;temporary&rdquo; hack; every piece of entangled code, disrupts that steam of features. Those things that we strive for - reacting to changes in business requirements, as fast and as reliable as possible - are out of <em>scope</em> now.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<p>Niklas thinking to himself; &ldquo;I want to hear his answer&rdquo;.</p>
+<h2 id="write-quality-into-code">Write Quality Into Code</h2>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK, how can we write high quality code?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>What is the essence of the code? I mean in its simplest sense.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It&rsquo;s some form of text, I guess.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>True. And being text is an important aspect of code. But for now, let&rsquo;s go one level up. In all programming languages, we have two sets of constructs. One set for arranging and structuring the code - like functions, classes, packages, modules, interfaces, etc - which are not performing any actions. And there is this another set of constructs that act; like assignments, conditionals, calculations, function calls, etc - the part that runs.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Now that I think about it, indeed I can recognize those sets of constructs in a bunch of programming languages.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Imagine this ocean of programming language constructs, the definitions, and implementations. And we want to write them down. What should we write down?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>We write down something that produces the expected output.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>If I had asked you &ldquo;How do you cook?&rdquo; would you answer me &ldquo;We will chop things up and scramble things until we have something that we can eat&rdquo;? Please pay attention more closely.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK, please elaborate.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>What are the things that you will put inside a file as code? How do you name them? Where do you get those names from? Where do you get the ideas for how they should look like? How do you know what is the purpose of each definition? Where that purpose comes from? Is it based on what it does? Or is it based on what it is for? How do you describe the behavior? And from where do you get the specifications for that behavior?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>I am not sure. Something comes into the system and something goes out and the code should convert the first to the second somehow.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Somehow? Sounds like you are programming by accident! Pretty much like how you cook.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>I mean for sure when there is a concept, I will use that. For example, I might need a class named Customer.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>What is a concept? Where have you found it? What is a Customer?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>A concept is an abstraction of something. And I find it when I talk about the business.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>That&rsquo;s not a wrong answer. Is equality a concept?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It certainly is!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Would you please define equality?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>I find it pretty obvious. For example, if two variables have value 5 then they are equal.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>So, five meters is equal to five gallons, right?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>No.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>What about two points in a three-dimension space? How can they be considered equal?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK, equality is a concept that can have different meanings.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>True. And where that meaning is coming from? From the <em>context</em> in which we are having a conversation. Now, what is a Customer?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It depends I guess.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Depends on what?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>On the context that we are having a conversation inside it.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>How do you describe that context for the concept <em>Customer</em>?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>It is obviously a customer of our business.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Assuming that your business is an e-commerce website, how do you define a <em>Customer</em> in your system? For sure your business has different parts/departments/contexts, right? Is the meaning of <em>Customer</em> the same in Sales and Billing and Shipping and Warehouse?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>So, a single thing can have different meanings in different parts of the same business!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>To be more specific, different <em>bounded contexts</em> of the business. But we will defer explaining it to later. You ask about how to write good quality code. The first step is to decide what to write down and for that, you need a clear understanding of the <em>concepts</em> of the business, alongside the business <em>contexts</em> that give meaning to those <em>concepts</em>.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Sounds right. Yet I imagine it will be a constant battle between Software Developers and Business Experts, long, unmaintainable documents and such. I understand now that just writing down some code inside a file is insane, and having a shared understanding of our business domain is essential, yet this fact that we need to have a clear understanding of the business makes me just more disappointed in ever reducing the degree of the messiness.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>You are not the first person discovering these facts. There are practices and techniques that are out there and have been invented and improved over the years, long before us, having our conversation.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<h2 id="context-concept-behavior">Context, Concept, Behavior</h2>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>And now that I think about it we need also to describe the behavior of each concept in each context! And how those context islands should communicate! It&rsquo;s impossible to model all that details! That&rsquo;s insane!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>That&rsquo;s not how we do it. Industrial Engineers faced similar problems long before Software Industry even comes to exist. They faced the same problems while they were trying to model systems - for example for project management. They learned that instead of focusing on describing everything in detail, the real focus should be only on action points, like commands and events. And also things that affect those, like policies.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Nice! I can imagine that might work.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>We do the same thing. Instead of thinking about the details of a behavior in terms of <em>steps</em>, basically, we only care about the <em>commands</em> - that trigger that action path - and the <em>events</em> that are generated as the result of that.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Now, I guess we can have a very precise model of our business domain!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Except in Software Development we are not looking for precise models of the business domain!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK &hellip; Please elaborate.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>The goal is to have a two-way communication channel between business on one hand, and all the way down to the code-base on the other hand. Business requirements change rather very fast at our time. Having a precise model is next to useless. Instead, so far, we established a <em>language</em> that describes the different <em>entities</em> and their <em>behavior</em> in our domain. It&rsquo;s far less often for something technical to affect this language. But now everyone - both business and technical people - talk in the same language. They use same concepts that have a <em>clear</em> (not static) meaning inside a specific context and they react to different <em>commands</em> in our domain by triggering different <em>events</em>.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>And it&rsquo;s a live thing!</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Indeed! Which of-course gets mature over time, yet stays vigilant in face of any changes in business side. And also the technical side - we will come to this part later.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<hr>
+<h1 id="todo">TODO</h1>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/agile/'>Agile</a>, <a class='tag' href='/tags/tdd/'>TDD</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/posts/2020/first/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>First</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://twitter.com/__dc0d__' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:kaveh.shahbazian@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><div class='copyright'>
+  <p> &copy; 2020 KavehShahbazian </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.c3bcf2df.js'></script>
+
+</body>
+
+</html>
+

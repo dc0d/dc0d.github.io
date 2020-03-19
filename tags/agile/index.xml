@@ -6,21 +6,18 @@
     <description>Recent content in Agile on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2020 23:46:41 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 04:58:23 +0100</lastBuildDate>
     
 	<atom:link href="https://dc0d.github.io/tags/agile/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Agile - Little Rambling</title>
-      <link>https://dc0d.github.io/posts/agile-little-rambling/</link>
-      <pubDate>Mon, 24 Feb 2020 23:46:41 +0100</pubDate>
+      <title>Dialogue II</title>
+      <link>https://dc0d.github.io/posts/2020/dialogue-ii/</link>
+      <pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
       
-      <guid>https://dc0d.github.io/posts/agile-little-rambling/</guid>
-      <description>WIP - v0.0.1
- The state of things in this industry is a bit &amp;hellip; &amp;ldquo;complicated&amp;rdquo;. Maybe having an entry point could help.
-What is Software Development? Lots of metaphors have been used to describe or define Software Development. Maybe because it has no definition yet, as of 2020.
-Software Development as Manufacturing Yeah, no. When a factory manufactures a car, it can be used only by one client - unless we could send that one single car into parallel universes.</description>
+      <guid>https://dc0d.github.io/posts/2020/dialogue-ii/</guid>
+      <description>This is a work in progress. It is picturing how one could think about Software Development - one of many possible ways.     Niklas :  Something feels broken about all that code we have.   Edmond :  Maybe. But aren&amp;rsquo;t you making money?   Niklas :  We do. But doing anything new is hard, changing or fixing stuff is hard, everything feels so slow, so ineffective.</description>
     </item>
     
   </channel>

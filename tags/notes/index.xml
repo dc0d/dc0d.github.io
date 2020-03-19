@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Timeline on sketches</title>
-    <link>https://dc0d.github.io/tags/timeline/</link>
-    <description>Recent content in Timeline on sketches</description>
+    <title>Notes on sketches</title>
+    <link>https://dc0d.github.io/tags/notes/</link>
+    <description>Recent content in Notes on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Feb 2020 19:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://dc0d.github.io/tags/timeline/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dc0d.github.io/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First</title>
-      <link>https://dc0d.github.io/posts/first/</link>
+      <link>https://dc0d.github.io/posts/2020/first/</link>
       <pubDate>Sun, 09 Feb 2020 19:00:00 +0100</pubDate>
       
-      <guid>https://dc0d.github.io/posts/first/</guid>
+      <guid>https://dc0d.github.io/posts/2020/first/</guid>
       <description>I have stopped blogging at some point (for the third time). And many things happened during the last year, I decided to relocate to another country, experienced a multi-culture life &amp;amp; work atmosphere and tackled the ups and downs.
-Maybe I write about that experience someday. And start blogging again. I do not know yet.</description>
+Maybe I write about that experience someday. And start blogging again. I do not know yet.
+Squares A and B have the same color.</description>
     </item>
     
   </channel>
