@@ -1,11 +1,12 @@
 ---
 title: "Agile - Little Rambling"
 date: 2020-02-24T23:46:41+01:00
-draft: false
+draft: true
 tags: ["Agile", "TDD"]
+cover:
+    image: /images/agile-in-practice.png
+    alternate: Agile In Practice
 ---
-
-![Agile In Practice](/images/agile-in-practice.png)
 
 > WIP - v0.0.1
 
