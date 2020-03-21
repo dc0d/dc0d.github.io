@@ -22,7 +22,7 @@ Niklas :: We do. But doing anything new is hard, changing or fixing stuff is har
 
 Edmond :: How so?
 
-Niklas :: It is a constant battle. It's a 24/7 firefighting. Yes, there are all sorts of alarms, monitoring and automated stuff there. To be honest it feels like we are automating shit! Everything is red all the time. Nobody actually cares anymore. We all just want to be done with office hours and we pray on "standby"s.
+Niklas :: It is a constant battle. It's a 24/7 firefighting. Yes, there are all sorts of alarms, monitoring and automated stuff there. To be honest it feels like we are automating shit! Everything is red all the time. Nobody actually cares anymore. We all just want to be done with office hours and we pray on the _"standby"_.
 
 Edmond :: Have you come up with any ideas about the whole thing? I mean, what's the cause of this?
 
@@ -54,13 +54,13 @@ Edmond :: You mean something like _Law-Making_? Well; possibly; close enough. Yo
 
 ## Code vs Artifact (Product)
 
-Code vs Artifact (Product) dichotomy is all wrong. We are not actually selling a product - in a 19th  Industrial Revolution sense. We are selling functionality.
+Code vs Artifact (Product) dichotomy is all wrong. We are not actually selling a product - in a conventional industrial sense. We are selling functionality.
 
 It's Code vs Execution.
 
 A Software Product is just a packaging and delivery mechanism to provide that functionality to the customer. And the customer has access to that functionality at any time she/he has a need for that functionality.
 
-That's how we should think about Software Development: It's Code vs Execution. That should be the base for the judgments that we make about each step in Software Development.
+That's how we should think about Software Development: It's _Code vs Execution_. That should be _the base for all the judgments that we make about each step in Software Development_.
 
 A software product is like parallel mirrors. Each reflection is an execution. When the code gets inside a product, between those mirrors, you get an infinite number of _what you have: the code_. You get that's in the code and you benefit from it everywhere - or get hurt everywhere.
 
@@ -118,7 +118,7 @@ Edmond :: Can you build me an Amazon? Or a Google? Or just a Notepad clone? Note
 
 Niklas :: These are totally different questions and I am not getting a nice vibe from you right now.
 
-Edmond :: Indeed they are different questions. Now my question is why in the world should someone think there is nothing to learn about Software Development? Why do you think being able to use a laptop and entering some code into it and get something on the screen is Software Development? I mean; where this assumption comes from that there is nothing there to learn when it comes to Software Development? Why do you think it's all about coding and being a tool-expert?
+Edmond :: Indeed they are different questions. Now my question is why in the world should someone think there is nothing to learn about Software Development? Why do you think being able to use a laptop and entering some code into it and get something on the screen is Software Development? I mean; where this assumption comes from that there is nothing there to learn when it comes to Software Development? Why do you think it's all about coding and being a "tool-expert"?
 
 Niklas :: How _Quality_ works anyway? In that _Golden Tetrahedron_ of yours.
 
@@ -204,7 +204,6 @@ Edmond :: You are not the first person discovering these facts. There are practi
 
 ## Context, Concept, Behavior
 
-
 {{<convo sep=":">}}
 
 Niklas :: And now that I think about it we need also to describe the behavior of each concept in each context! And how those context islands should communicate! It's impossible to model all that details! That's insane!
@@ -225,7 +224,31 @@ Edmond :: The goal is to have a two-way communication channel between business o
 
 Niklas :: And it's a live thing!
 
-Edmond :: Indeed! Which of-course gets mature over time, yet stays vigilant in face of any changes in business side. And also the technical side - we will come to this part later.
+Edmond :: Indeed! Which of-course gets mature over time, yet stays vigilant in face of any changes in business side. And also the technical side - we will come to this part later. Now, we have a clear language for describing our intent and a nice model that specifies the expected behavior in different parts of the system; how a specific bounded contaxt collaborates with the rest of the system, which commands it will handle, how it will react to those commands by trigering different events and what pilicies and business rules it will apply, based on which, those events will be decided.
+
+{{</convo>}}
+
+## Planned Programming
+
+{{<convo sep=":">}}
+
+Niklas :: Having a clear language through which everyone can communicate clearly, plus a nice model of our business domain, I can say we are ready to write some code!
+
+Edmond :: Not quite.
+
+Niklas :: But we achived our goal, right? To have a two-way communication channel between business and all the way down to the code.
+
+Edmond :: The question still stays: What do you write down? What do you put inside those files as code?
+
+Niklas :: I create an application for each bounded context and name my classes after things we find in the shared language for that context.
+
+Edmond :: It is possible to write all sort of code in source files. How do you make sure that you actually need it? How do you make sure that you are not making something up that has no actual usage or has no actual equivalent in your business? As you have learned from your current system before, you already know that writing code can mean many things. But getting it right on first try, is not one of them. So, I guess to you, it looks like a bit of try and error.
+
+Niklas :: It _is_ try and error. How can we write code any other way?
+
+Edmond :: You didn't answer my question.
+
+Niklas :: It sounds a bit confusing to me right now. What do I need more
 
 {{</convo>}}
 
