@@ -248,7 +248,11 @@ Niklas :: Sounds pragmatic. It's almost common sense. How exactly do we plan for
 
 Edmond :: This is another one of those solved problems out there. Let's come back to that later. Before getting there, let's get more familiar with the nature of the code at different parts of the system, the application, in our modules and packages and all other places.
 
+{{</convo>}}
+
 ## Three Dimensional Code
+
+{{<convo sep=":">}}
 
 Niklas :: Does the nature of the code changes depending on where it sits?
 
