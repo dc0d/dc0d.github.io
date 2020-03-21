@@ -132,7 +132,7 @@ Niklas thinking to himself; "I want to hear his answer".
 
 {{<convo sep=":">}}
 
-Niklas :: OK, how can we write high quality code?
+Niklas :: OK, how can we write high-quality code?
 
 Edmond :: What is the essence of the code? I mean in its simplest sense.
 
@@ -208,11 +208,11 @@ Edmond :: You are not the first person discovering these facts. There are practi
 
 Niklas :: And now that I think about it we need also to describe the behavior of each concept in each context! And how those context islands should communicate! It's impossible to model all that details! That's insane!
 
-Edmond :: That's not how we do it. Industrial Engineers faced similar problems long before Software Industry even comes to exist. They faced the same problems while they were trying to model systems - for example for project management. They learned that instead of focusing on describing everything in detail, the real focus should be only on action points, like commands and events. And also things that affect those, like policies.
+Edmond :: That's not how we do it. Industrial Engineers faced similar problems long before the Software Industry even comes to exist. They faced the same problems while they were trying to model systems - for example for project management. They learned that instead of focusing on describing everything in detail, the real focus should be only on action points, like commands and events. And also things that affect those, like policies.
 
 Niklas :: Nice! I can imagine that might work.
 
-Edmond :: We do the same thing. Instead of thinking about the details of a behavior in terms of _steps_, basically, we only care about the _commands_ - that trigger that action path - and the _events_ that are generated as the result of that.
+Edmond :: We do the same thing. Instead of thinking about the details of behavior in terms of _steps_, basically, we only care about the _commands_ - that trigger that action path - and the _events_ that are generated as the result of that.
 
 Niklas :: Now, I guess we can have a very precise model of our business domain!
 
@@ -220,7 +220,7 @@ Edmond :: Except in Software Development we are not looking for precise models o
 
 Niklas :: OK ... Please elaborate.
 
-Edmond :: The goal is to have a two-way communication channel between business on one hand, and all the way down to the code-base on the other hand. Business requirements change rather very fast at our time. Having a precise model is next to useless. Instead, so far, we established a _language_ that describes the different _entities_ and their _behavior_ in our domain. It's far less often for something technical to affect this language. But now everyone - both business and technical people - talk in the same language. They use same concepts that have a _clear_ (not static) meaning inside a specific context and they react to different _commands_ in our domain by triggering different _events_.
+Edmond :: The goal is to have a two-way communication channel between business on one hand, and all the way down to the code-base on the other hand. Business requirements change rather very fast at our time. Having a precise model is next to useless. Instead, so far, we established a _language_ that describes the different _entities_ and their _behavior_ in our domain. It's far less often for something technical to affect this language. But now everyone - both business and technical people - talk in the same language. They use the same concepts that have a _clear_ (not static) meaning inside a specific context and they react to different _commands_ in our domain by triggering different _events_.
 
 Niklas :: And it's a live thing!
 
@@ -238,17 +238,33 @@ Edmond :: Not quite.
 
 Niklas :: But we achived our goal, right? To have a two-way communication channel between business and all the way down to the code.
 
-Edmond :: The question still stays: What do you write down? What do you put inside those files as code?
+Edmond :: The question still stays: What do you write down? What do you put inside those files as code? We need a feedback loop which keeps us on track, to helps us to avoid swaying away from our business domain, while we are happily busy building our Lego towers. Without a feedback loop that proves the focus of the code is on business and more importantly proves it's correctness - according to the expected behavior - you are just coding the same way that you cook!
 
-Niklas :: I create an application for each bounded context and name my classes after things we find in the shared language for that context.
+Niklas :: I do not cook that way. But I understand what you mean. So, please elaborate.
 
-Edmond :: It is possible to write all sort of code in source files. How do you make sure that you actually need it? How do you make sure that you are not making something up that has no actual usage or has no actual equivalent in your business? As you have learned from your current system before, you already know that writing code can mean many things. But getting it right on first try, is not one of them. So, I guess to you, it looks like a bit of try and error.
+Edmond :: We need some sort of planned programming. First, we devise a plan for the behavior that we expect from a code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in hers/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.
 
-Niklas :: It _is_ try and error. How can we write code any other way?
+Niklas :: Sounds pragmatic. It's almost common sense. How exactly do we plan for what we expect our code to provide?
 
-Edmond :: You didn't answer my question.
+Edmond :: This is another one of those solved problems out there. Let's come back to that later. Before getting there, let's get more familiar with the nature of the code at different parts of the system, the application, in our modules and packages and all other places.
 
-Niklas :: It sounds a bit confusing to me right now. What do I need more
+## Three Dimensional Code
+
+Niklas :: Does the nature of the code changes depending on where it sits?
+
+Edmond :: It is more precise to say that nature changes depending on the purpose of that code - what it is for. There are three dimensions of purpose for code: how _business-specific_ it is, how _application-specific_ it is, or, how _technology-specific_ it is.
+
+Niklas :: Arrrrg! That's almost obvious! Why haven't I think of it? It explains a *lot* about our code-base. We have all of them present in all the places of our code-base! We are mixing unrelated stuff in all places.
+
+Edmond :: I figured that much. Just a heads up, that's not all of mixing unrelated things that you are doing. Yet again let's defer that to later.
+
+Niklas :: So are there other aspects to the code?
+
+Edmond :: Yes, but not at the same space as these three, which we will study in more detail later. Now that we have a clear understanding of the business purpose of our activity, we reached at the point to actually start that activity.
+
+Niklas :: Writing some code?
+
+Edmond :: No. Please! Even now that we know that we have to plan, yet, we don't know _how_ to do the planning. Where should we start? How we write down our plans? Do we need to have an image of how the whole thing should look like? How do we know that image is the right one?
 
 {{</convo>}}
 
