@@ -88,6 +88,8 @@ _Nothing justifies putting bad code into production - a “temporary hack” or 
 
 Except: You are not deploying those charts and diagrams. You are deploying the code.
 
+Code is a matter of highest value. It carries something very precious in its flesh. We will look into it later.
+
 ## Iron Triangle
 
 {{<convo sep=":">}}
@@ -274,4 +276,4 @@ Edmond :: No. Please! Even now that we know that we have to plan, yet, we don't 
 
 ---
 
-# TODO
+> TODO

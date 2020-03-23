@@ -44,7 +44,7 @@ listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
 hideEntryMeta = ["page"] # boolean / array of sections
-showReadingTime = true
+showReadingTime = false
 showLastmod = true
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
@@ -144,3 +144,9 @@ lang = "en"
 languageName = "English"
 weight = 1
 languageCode = "en-us"
+
+rssLimit = 10
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
