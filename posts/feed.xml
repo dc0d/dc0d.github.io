@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 04:58:23 +0100</lastBuildDate>
     
-	<atom:link href="https://dc0d.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dc0d.github.io/posts/feed.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sketches</title>
-    <link>https://dc0d.github.io/posts/2020/</link>
+    <link>https://dc0d.github.io/</link>
     <description>Recent content on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Mar 2020 04:58:23 +0100</lastBuildDate>
     
-	<atom:link href="https://dc0d.github.io/posts/2020/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dc0d.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
