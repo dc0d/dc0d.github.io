@@ -26,7 +26,7 @@ Niklas :: It is a constant battle. It's a 24/7 firefighting. Yes, there are all 
 
 Edmond :: Have you come up with any ideas about the whole thing? I mean, what's the cause of this?
 
-Niklas :: Came up with lots of ideas! Lots of them! Even tried some of them. None worked. I ran out of ideas. What _is_ Software Development anyway?
+Niklas :: Came up with lots of ideas! Lots of them! Even tried some of them. None worked. I ran out of ideas. I wonder, what am I doing? What am I trying to achieve? What in the world is this _Software Development_ thing?
 
 Edmond :: Indeed. Let's have at it.
 
