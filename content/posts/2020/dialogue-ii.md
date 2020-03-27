@@ -88,7 +88,7 @@ _Nothing justifies putting bad code into production - a “temporary hack” or 
 
 Except: You are not deploying those charts and diagrams. You are deploying the code.
 
-Code is a matter of highest value. It carries something very precious in its flesh. We will look into it later.
+Code is a matter of highest value - or highest cost - which multiplies before you can give it a second thought.
 
 ## Iron Triangle
 
@@ -240,11 +240,11 @@ Edmond :: Not quite.
 
 Niklas :: But we achived our goal, right? To have a two-way communication channel between business and all the way down to the code.
 
-Edmond :: The question still stays: What do you write down? What do you put inside those files as code? We need a feedback loop which keeps us on track, to helps us to avoid swaying away from our business domain, while we are happily busy building our Lego towers. Without a feedback loop that proves the focus of the code is on business and more importantly proves it's correctness - according to the expected behavior - you are just coding the same way that you cook!
+Edmond :: The question still remains: What do you write down? What do you put inside those files as code? We need a feedback loop which keeps us on track, to helps us to avoid swaying away from our business domain, while we are happily busy building our Lego towers. Without a feedback loop that proves the focus of the code is on business and more importantly proves it's correctness - according to the expected behavior - you are just coding the same way that you cook!
 
 Niklas :: I do not cook that way. But I understand what you mean. So, please elaborate.
 
-Edmond :: We need some sort of planned programming. First, we devise a plan for the behavior that we expect from a code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in hers/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.
+Edmond :: We need some sort of planned programming. First, we devise a plan for the behavior that we expect from a code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in her/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.
 
 Niklas :: Sounds pragmatic. It's almost common sense. How exactly do we plan for what we expect our code to provide?
 
@@ -271,6 +271,44 @@ Edmond :: Yes, but not at the same space as these three, which we will study in 
 Niklas :: Writing some code?
 
 Edmond :: No. Please! Even now that we know that we have to plan, yet, we don't know _how_ to do the planning. Where should we start? How we write down our plans? Do we need to have an image of how the whole thing should look like? How do we know that image is the right one?
+
+Niklas :: OK, How to do the planning?
+
+Edmond :: This is the part that we want to wrap our business language inside another language - the technical language. The technical language acts as a host for the business language, so it can communicate with the alien world of technology - the hardware, the network, the Matrix! There is no spoon! But we know the business is real and it is paying the bills.
+
+Niklas :: OK ... It was a descriptive picture. But how does that affect the planning?
+
+Edmond :: We want this layer to be as thin and as simple as possible. But what is simplicity in Software Development? If we try to answer this question, we will end up with the wrong answer - or a very limited one. Because you have to define simplicity in terms of something you have beforehand - your assumptions. But, as we learned so far, the business decides the things that need to be done - our assumptions are next to meaningless. And the main activity in writing the software, the designing, can not benefit from out-of-thin-air assumptions. A better question is: How to avoid complexity?
+
+{{</convo>}}
+
+## Complexity
+
+{{<convo sep=":">}}
+
+Niklas :: So, our main activity is the designing?
+
+Edmond :: Yes.
+
+Niklas :: And the purpose of planning is to help with the design?
+
+Edmond :: Yes.
+
+Niklas :: What is designing in Software Development?
+
+Edmond :: What we have done so far, was part of the designing. What we will do after, is part of the designing. It is about choosing based on informed decisions. And the core part of this activity is far more human than what you might imagine. We will see more of it as we go.
+
+Niklas :: How to avoid complexity then?
+
+Edmond :: How do we imagine our system? As close as possible to the business, right? So, we want our system to be able to respond to changes in a reliable manner and adapts itself in an as-small-as-possible cost-window. For that, we should be able to undo our decisions that are made over a course of time - and piled up as the system was growing. Being unable to do that, is complexity. When designing a system, complexity comes from the irreversibility of our decisions.
+
+Niklas :: Interesting! But, is such a design even possible?
+
+Edmond :: We have a history of fighting complexity in Software Development and we have learned a lot on how to manage the details in different parts of the system, in a way that they don't affect other parts. It is true that we have to stick to our plans and never have anything unplanned in our system. But, at the same time, we understand the nature of our three-dimensional code, so we can organize the responsibilities and collaborations between different parts of the system, in a way that the coupling between them, be kept to a minimum. These practices, techniques, and principles help us in all aspects of our design, from the organization of our code in some files to higher-level abstractions that we might introduce and use, based on the feedback that we get from our plans and specifications, which in turn reflect our business language.
+
+Niklas :: Aren't we making some assumptions that way?
+
+Edmond :: Not about the business. And the goal of these techniques and practices is to make different parts of our system disposable/replaceable - to _undo our technical assumptions_.
 
 {{</convo>}}
 
