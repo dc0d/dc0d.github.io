@@ -570,7 +570,7 @@ if (!doNotTrack) {
 <p>It&rsquo;s not just about a code that just works.</p>
 <p><em>Nothing justifies putting bad code into production - a “temporary hack” or whatever</em>. And we can come up with all sorts of colorful and creative excuses - some of them are even “professional” terms, from all departments. And yes; we can push programmers - to an extent that they don’t care anymore. Kind of like an I-am-just-following-the-orders situation, you know. To make people in charge happy. Somehow like charts and diagrams which make people happy!</p>
 <p>Except: You are not deploying those charts and diagrams. You are deploying the code.</p>
-<p>Code is a matter of highest value. It carries something very precious in its flesh. We will look into it later.</p>
+<p>Code is a matter of highest value - or highest cost - which multiplies before you can give it a second thought.</p>
 <h2 id="iron-triangle">Iron Triangle</h2>
 <div class='convo'>
   <ol>
@@ -1954,7 +1954,7 @@ if (!doNotTrack) {
           
             
               <div class='sep'> : </div>
-              <div class='text'>The question still stays: What do you write down? What do you put inside those files as code? We need a feedback loop which keeps us on track, to helps us to avoid swaying away from our business domain, while we are happily busy building our Lego towers. Without a feedback loop that proves the focus of the code is on business and more importantly proves it&rsquo;s correctness - according to the expected behavior - you are just coding the same way that you cook!</div>
+              <div class='text'>The question still remains: What do you write down? What do you put inside those files as code? We need a feedback loop which keeps us on track, to helps us to avoid swaying away from our business domain, while we are happily busy building our Lego towers. Without a feedback loop that proves the focus of the code is on business and more importantly proves it&rsquo;s correctness - according to the expected behavior - you are just coding the same way that you cook!</div>
             
           
         
@@ -1996,7 +1996,7 @@ if (!doNotTrack) {
           
             
               <div class='sep'> : </div>
-              <div class='text'>We need some sort of planned programming. First, we devise a plan for the behavior that we expect from a code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in hers/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.</div>
+              <div class='text'>We need some sort of planned programming. First, we devise a plan for the behavior that we expect from a code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in her/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.</div>
             
           
         
@@ -2220,6 +2220,355 @@ if (!doNotTrack) {
             
               <div class='sep'> : </div>
               <div class='text'>No. Please! Even now that we know that we have to plan, yet, we don&rsquo;t know <em>how</em> to do the planning. Where should we start? How we write down our plans? Do we need to have an image of how the whole thing should look like? How do we know that image is the right one?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK, How to do the planning?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>This is the part that we want to wrap our business language inside another language - the technical language. The technical language acts as a host for the business language, so it can communicate with the alien world of technology - the hardware, the network, the Matrix! There is no spoon! But we know the business is real and it is paying the bills.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>OK &hellip; It was a descriptive picture. But how does that affect the planning?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>We want this layer to be as thin and as simple as possible. But what is simplicity in Software Development? If we try to answer this question, we will end up with the wrong answer - or a very limited one. Because you have to define simplicity in terms of something you have beforehand - your assumptions. But, as we learned so far, the business decides the things that need to be done - our assumptions are next to meaningless. And the main activity in writing the software, the designing, can not benefit from out-of-thin-air assumptions. A better question is: How to avoid complexity?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+    
+  </ol>
+</div>
+
+<h2 id="complexity">Complexity</h2>
+<div class='convo'>
+  <ol>
+    
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>So, our main activity is the designing?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Yes.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>And the purpose of planning is to help with the design?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Yes.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>What is designing in Software Development?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>What we have done so far, was part of the designing. What we will do after, is part of the designing. It is about choosing based on informed decisions. And the core part of this activity is far more human than what you might imagine. We will see more of it as we go.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>How to avoid complexity then?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>How do we imagine our system? As close as possible to the business, right? So, we want our system to be able to respond to changes in a reliable manner and adapts itself in an as-small-as-possible cost-window. For that, we should be able to undo our decisions that are made over a course of time - and piled up as the system was growing. Being unable to do that, is complexity. When designing a system, complexity comes from the irreversibility of our decisions.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Interesting! But, is such a design even possible?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>We have a history of fighting complexity in Software Development and we have learned a lot on how to manage the details in different parts of the system, in a way that they don&rsquo;t affect other parts. It is true that we have to stick to our plans and never have anything unplanned in our system. But, at the same time, we understand the nature of our three-dimensional code, so we can organize the responsibilities and collaborations between different parts of the system, in a way that the coupling between them, be kept to a minimum. These practices, techniques, and principles help us in all aspects of our design, from the organization of our code in some files to higher-level abstractions that we might introduce and use, based on the feedback that we get from our plans and specifications, which in turn reflect our business language.</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Niklas</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Aren&rsquo;t we making some assumptions that way?</div>
+            
+          
+        
+      </li>
+      
+    
+      
+    
+      
+      <li>
+        
+          
+            
+              <div class='person'>Edmond</div>
+            
+          
+        
+          
+            
+              <div class='sep'> : </div>
+              <div class='text'>Not about the business. And the goal of these techniques and practices is to make different parts of our system disposable/replaceable - to <em>undo our technical assumptions</em>.</div>
             
           
         
