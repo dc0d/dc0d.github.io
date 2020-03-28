@@ -308,7 +308,7 @@ Edmond :: We have a history of fighting complexity in Software Development and w
 
 Niklas :: Aren't we making some assumptions that way?
 
-Edmond :: Not about the business. And the goal of these techniques and practices is to make different parts of our system disposable/replaceable - to _undo our technical assumptions_.
+Edmond :: Not about the business. And the goal of these techniques and practices is to make different parts of our system disposable/replaceable - to _easily undo our technical decisions_.
 
 {{</convo>}}
 
