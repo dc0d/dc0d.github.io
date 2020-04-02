@@ -56,13 +56,15 @@ Edmond :: You mean something like _Law-Making_? Well; possibly; close enough. Yo
 
 Code vs Artifact (Product) dichotomy is all wrong. We are not actually selling a product - in a conventional industrial sense. We are selling functionality.
 
-It's Code vs Execution.
+It's Code vs _Execution_. We sell _Executions_. We make money from each and every _Execution_ of the code.
 
 A Software Product is just a packaging and delivery mechanism to provide that functionality to the customer. And the customer has access to that functionality at any time she/he has a need for that functionality.
 
+Each Execution of the code is a demonstration of that functionality.
+
 That's how we should think about Software Development: It's _Code vs Execution_. That should be _the base for all the judgments that we make about each step in Software Development_.
 
-A software product is like parallel mirrors. Each reflection is an execution. When the code gets inside a product, between those mirrors, you get an infinite number of _what you have: the code_. You get that's in the code and you benefit from it everywhere - or get hurt everywhere.
+Each proper Execution means money. Each bad Execution means loss of money. Fail to improve the Execution, in an acceptable cost-window, means the absence of money - which will go to your competitor.
 
 ## Code vs Execution
 
