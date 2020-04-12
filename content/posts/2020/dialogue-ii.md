@@ -108,29 +108,11 @@ Niklas :: Quality? Is it even objective when it comes to code?
 
 Edmond :: It certainly does have many objective aspects - based on which, many principles and practices are based. It is a long story. We will come back to that.
 
-Niklas :: You say it in a way that sounds there are that many things to learn about Software Development!
-
-Edmond :: Do you have a car?
-
-Niklas :: Yes. An old BMW.
-
-Edmond :: Do you think if you can build me a BMW? I mean building every bit of it?
-
-Niklas :: That needs far more than one specialty! Let alone one man!
-
-Edmond :: Can you build me an Amazon? Or a Google? Or just a Notepad clone? Notepad is a pretty simple piece of software, right?
-
-Niklas :: These are totally different questions and I am not getting a nice vibe from you right now.
-
-Edmond :: Indeed they are different questions. Now my question is why in the world should someone think there is nothing to learn about Software Development? Why do you think being able to use a laptop and entering some code into it and get something on the screen is Software Development? I mean; where this assumption comes from that there is nothing there to learn when it comes to Software Development? Why do you think it's all about coding and being a "tool-expert"?
-
 Niklas :: How _Quality_ works anyway? In that _Golden Tetrahedron_ of yours.
 
 Edmond :: When _Quality_ degrades, for the same amount of money, you get less scope. It’s not possible to have a stream of features to compete in the market. Every "temporary" hack; every piece of entangled code, disrupts that steam of features. Those things that we strive for - reacting to changes in business requirements, as fast and as reliable as possible - are out of _scope_ now.
 
 {{</convo>}}
-
-Niklas thinking to himself; "I want to hear his answer".
 
 ## Write Quality Into Code
 
@@ -311,6 +293,70 @@ Edmond :: We have a history of fighting complexity in Software Development and w
 Niklas :: Aren't we making some assumptions that way?
 
 Edmond :: Not about the business. And the goal of these techniques and practices is to make different parts of our system disposable/replaceable - to _easily undo our technical decisions_.
+
+{{</convo>}}
+
+## The Samurai and The Katana
+
+{{<convo sep=":">}}
+
+Niklas :: How can we ... well, design the design?
+
+Edmond :: We don't. We can't.
+
+Niklas :: Then what do we do?
+
+Edmond :: We drive the design.
+
+Niklas :: How does that work?
+
+Edmond :: Everything flows through people, from business all the way to the implementation. We need to drive our design in that direction. We do this through planned programming, devised as specifications that drive our design. How else can we align the outcome with the business?
+
+Niklas :: Everything flows through people, true. But where ours tools and technology sits in this picture?
+
+Edmond :: The Katana - the samurai sword - has nine different types of blades. Imagine that you have the best Katana ever made. Can you run a battle having the best Katana ever made? Do you dare facing swordmasters on the battlefield?
+
+Niklas :: No way!
+
+Edmond :: Why?
+
+Niklas :: Because they are masters!
+
+Edmond :: Exactly. The best Kata ever made, is useless, if you have not mastered the forms, the techniques. It's useless if you have not practiced those forms and techniques to internalize them. Your tool is useless if you do not know how to use it best.
+
+Niklas :: So, that's where ours tools and technology sits.
+
+Edmond :: Yes. And the same goes for the teams that do not practice to be a team, and for the organizations too. Any group of people that fail to practice communicating on a daily basis will produce dysfunctional outcomes and products. Tools are passive in nature. We can automate them. And surely we need to learn about them. Yet we have to drive them through our design toward our goal. That's why having a feedback loop is essential.
+
+{{</convo>}}
+
+## Onions
+
+{{<convo sep=":">}}
+
+Niklas :: So, we have to master the design.
+
+Edmond :: Yes.
+
+Niklas :: And we drive the design, through the specifications that are devised based on the business.
+
+Edmond :: Yes.
+
+Niklas :: How can we make sure that those specifications are describing every bit of behavior that we expect from every detail in the code?
+
+Edmond :: It doesn't work like that. We do not need to care about the details of the code. We focus only on the behavior of the code.
+
+Niklas :: Still, it's not easy for me to imagine that.
+
+Edmond :: The relationship between the specifications and the code is similar to the relationship between interfaces and classes. Interfaces describe behavior that a class needs to provide - without exposing anything about the implementation details. The specification for a specific behavior is similar. It is a protocol that the code must follow. It does not describe _how_ the code does that.
+
+Niklas :: Does the nature of the specifications also change? Based on the nature of the code.
+
+Edmond :: Yes. Remember that the technical language is meant to act as a host for the business language to make it able to communicate with the non-human, alien world of technology. This is our system. If we imagine it as an onion, the business language sits at its core. The closer a layer is to the core, the more business-specific it will be. As we move toward outer layers, the language - the code - becomes more application-specific. And at the outermost layers, it's mostly technology-specific. The inner layers do not care about the outer layers. Because it's the business that dictates what we have to do. That's why the outer layers depend on inner layers. But the inner layers do not know anything about outer layers.
+
+Niklas :: Interesting! That way the inner layers will remain intact, while we make all sorts of changes in the outer layers!
+
+Edmond :: Indeed. We can change the outermost layers which are basically technology-specific, without even touching the inner layers. That's the main way of controlling complexity: _to be able to undo our technical decisions easily_.
 
 {{</convo>}}
 
