@@ -1,5 +1,5 @@
 ---
-title: "Dialogue II"
+title: "What is Software Development?"
 date: 2020-03-07T04:58:23+01:00
 draft: false
 tags: ["Agile", "TDD"]
@@ -8,9 +8,9 @@ cover:
     alternate: Agile In Practice
 ---
 
-> ![wip](https://progress-bar.dev/1/?title=wip)
->   - This is a work in progress.
+>   - This is a work-in-progress - and will be so for some time.
 >   - It is picturing how one could think about Software Development - one of many possible ways.
+>   - Tradeoffs are made - the main goal here was/is to communicate.
 
 {{<convo sep=":">}}
 
@@ -132,7 +132,7 @@ Edmond :: Imagine this ocean of programming language constructs, the definitions
 
 Niklas :: We write down something that produces the expected output.
 
-Edmond :: If I had asked you "How do you cook?" would you answer me "We will chop things up and scramble things until we have something that we can eat"? Please pay attention more closely.
+Edmond :: If I had asked you "How do you cook ratatouille?" would you answer me "We will chop things up and scramble things until we have something that we can eat"? Please pay attention more closely.
 
 Niklas :: OK, please elaborate.
 
@@ -170,7 +170,7 @@ Niklas :: It depends I guess.
 
 Edmond :: Depends on what?
 
-Niklas :: On the context that we are having a conversation inside it.
+Niklas :: On the context that we are having a conversation inside.
 
 Edmond :: How do you describe that context for the concept _Customer_?
 
@@ -208,7 +208,7 @@ Niklas :: OK ... Please elaborate.
 
 Edmond :: The goal is to have a two-way communication channel between business on one hand, and all the way down to the code-base on the other hand. Business requirements change rather very fast at our time. Having a precise model is next to useless. Instead, so far, we established a _language_ that describes the different _entities_ and their _behavior_ in our domain. It's far less often for something technical to affect this language. But now everyone - both business and technical people - talk in the same language. They use the same concepts that have a _clear_ (not static) meaning inside a specific context and they react to different _commands_ in our domain by triggering different _events_.
 
-Niklas :: And it's a live thing!
+Niklas :: And ... is it a live thing?
 
 Edmond :: Indeed! Which of-course gets mature over time, yet stays vigilant in face of any changes in business side. And also the technical side - we will come to this part later. Now, we have a clear language for describing our intent and a nice model that specifies the expected behavior in different parts of the system; how a specific bounded contaxt collaborates with the rest of the system, which commands it will handle, how it will react to those commands by trigering different events and what pilicies and business rules it will apply, based on which, those events will be decided.
 
@@ -240,11 +240,11 @@ Edmond :: This is another one of those solved problems out there. Let's come bac
 
 {{<convo sep=":">}}
 
-Niklas :: Does the nature of the code changes depending on where it sits?
+Niklas :: Do you mean the nature of the code changes depending on where it sits?
 
 Edmond :: It is more precise to say that nature changes depending on the purpose of that code - what it is for. There are three dimensions of purpose for code: how _business-specific_ it is, how _application-specific_ it is, or, how _technology-specific_ it is.
 
-Niklas :: Arrrrg! That's almost obvious! Why haven't I think of it? It explains a *lot* about our code-base. We have all of them present in all the places of our code-base! We are mixing unrelated stuff in all places.
+Niklas :: Arrrrg! That's almost obvious! Why haven't I thought of it? It explains a *lot* about our code-base. We have all of them present in all the places of our code-base! We are mixing unrelated stuff in all places.
 
 Edmond :: I figured that much. Just a heads up, that's not all of mixing unrelated things that you are doing. Yet again let's defer that to later.
 
@@ -363,3 +363,7 @@ Edmond :: Indeed. We can change the outermost layers which are basically technol
 ---
 
 > TODO
+
+---
+
+> P.S. _I sincerely appreciate the help from all people who either helped with preparations or provided useful advice_.
