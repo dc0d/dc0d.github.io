@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>https://dc0d.github.io/posts/2020/dialogue-ii/</loc>
-    <lastmod>2020-03-07T04:58:23+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dc0d.github.io/posts/</loc>
     <lastmod>2020-03-07T04:58:23+01:00</lastmod>
   </url>
@@ -34,6 +29,11 @@
   
   <url>
     <loc>https://dc0d.github.io/tags/tdd/</loc>
+    <lastmod>2020-03-07T04:58:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dc0d.github.io/posts/2020/dialogue-ii/</loc>
     <lastmod>2020-03-07T04:58:23+01:00</lastmod>
   </url>
   
