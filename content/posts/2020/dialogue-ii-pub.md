@@ -308,9 +308,9 @@ Code is a matter of highest value - or highest cost - which multiplies before yo
 
 `Edmond`: Everything flows through people, from business all the way to the implementation. We need to drive our design in that direction. We do this through planned programming, devised as specifications that drive our design. How else can we align the outcome with the business?
 
-`Niklas`: Everything flows through people, true. But where ours tools and technology sits in this picture?
+`Niklas`: Everything flows through people, true. But where our tools and technology sits in this picture?
 
-`Edmond`: The Katana - the samurai sword - has nine different types of blades. Imagine that you have the best Katana ever made. Can you run a battle having the best Katana ever made? Do you dare facing swordmasters on the battlefield?
+`Edmond`: The Katana - the samurai sword - has nine different types of blades. Imagine that you have the best Katana ever made. Can you run into a battle, having the best Katana ever made? Do you dare facing swordmasters on the battlefield?
 
 `Niklas`: No way!
 
@@ -320,7 +320,7 @@ Code is a matter of highest value - or highest cost - which multiplies before yo
 
 `Edmond`: Exactly. The best Kata ever made, is useless, if you have not mastered the forms, the techniques. It's useless if you have not practiced those forms and techniques to internalize them. Your tool is useless if you do not know how to use it best.
 
-`Niklas`: So, that's where ours tools and technology sits.
+`Niklas`: So, that's where our tools and technology sits.
 
 `Edmond`: Yes. And the same goes for the teams that do not practice to be a team, and for the organizations too. Any group of people that fail to practice communicating on a daily basis will produce dysfunctional outcomes and products. Tools are passive in nature. We can automate them. And surely we need to learn about them. Yet we have to drive them through our design toward our goal. That's why having a feedback loop is essential.
 
