@@ -1,0 +1,32 @@
+name: publish
+
+on:
+  push:
+    paths:
+      - static/publish_trigger
+    branches:
+      - source
+
+jobs:
+  publish:
+    name: Publish Website
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          submodules: false # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Test
+        run: ls -lh ./public
