@@ -6,7 +6,7 @@ copyright = ""
 theme = "minimo"
 
 # disqusShortname = ""
-googleAnalytics = "UA-71617817-1"
+# googleAnalytics = "UA-71617817-1"
 
 Paginate = 7
 preserveTaxonomyNames = true
@@ -75,7 +75,7 @@ titleSeparator = "•"
 
 [params.social]
 # codepen = "MunifTanjim"
-email = "kaveh.shahbazian@gmail.com"
+email = "kaveh@shahbazian.link"
 # facebook = "MunifTanjim"
 # github = "MunifTanjim"
 # gitlab = "MunifTanjim"
