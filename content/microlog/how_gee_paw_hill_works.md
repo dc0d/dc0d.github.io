@@ -1,5 +1,5 @@
 ---
-title: "How GeePaw Hill works?"
+title: "How does GeePaw Hill work?"
 date: 2020-05-23T23:56:20+02:00
 draft: false
 ---
