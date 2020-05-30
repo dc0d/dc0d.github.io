@@ -57,7 +57,7 @@ func newFactor() factor {
 
 func (f factor) add10(n int) int                           { return n + f.value }
 func (f factor) multiply10(n int) int                      { return n * f.value }
-func (f *factor) makeOtheMethodsMeaningless(newFactor int) { f.value = newFactor }
+func (f *factor) makeOtherMethodsMeaningless(newFactor int) { f.value = newFactor }
 ```
 
 Now we have a mutable closure, shared between a bunch of functions (now called _methods_).
@@ -70,6 +70,6 @@ OOP and Functional Programming "can" be seen as a dual. They represent the same 
 
 We simply forgot about that - in time. OOP - in its original form - was about message-passing and behavior. And was trying to organize state and transformation through composing behaviors. While the OOP that we have tries to solve the composition problem, through data structures/type - same as Functional Programming.
 
-The Behavior has been forgotten.
+Behavior has been forgotten.
 
 > This was a quick sketch for drafting out these ideas and get them written. Maybe it can be improved, maybe not.
