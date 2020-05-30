@@ -1,5 +1,5 @@
 ---
-title: "Oop and Fp"
+title: "OOP and FP"
 date: 2020-05-31T01:38:54+02:00
 draft: false
 ---
@@ -42,7 +42,7 @@ func (f factor) add10(n int) int      { return n + f.value }
 func (f factor) multiply10(n int) int { return n * f.value }
 ```
 
-Wow! An Object is very much like bunch of functions with a shared closure!
+Wow! An Object is very much like a bunch of functions with a shared closure!
 
 # Last Bit, Mutation
 
@@ -68,8 +68,8 @@ OOP and Functional Programming "can" be seen as a dual. They represent the same 
 
 # What about message passing?
 
-We simply forgot about that - in time. OOP - in its original form - was about message-passing and behaviour. And was trying to organize state and transformation through composing behaviors. While the OOP that we have, tries to solve the composition problem, through data structures/type - same as Functional Programming.
+We simply forgot about that - in time. OOP - in its original form - was about message-passing and behavior. And was trying to organize state and transformation through composing behaviors. While the OOP that we have tries to solve the composition problem, through data structures/type - same as Functional Programming.
 
-Behavior has been forgotten.
+The Behavior has been forgotten.
 
-> This was a quick sketche for drafting out these ideas and get them written. Maybe it can be imroved, maybe not.
+> This was a quick sketch for drafting out these ideas and get them written. Maybe it can be improved, maybe not.
