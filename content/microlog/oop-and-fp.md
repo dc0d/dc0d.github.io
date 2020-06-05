@@ -1,5 +1,5 @@
 ---
-title: "OOP and FP"
+title: "How is OOP related to FP?"
 date: 2020-05-31T01:38:54+02:00
 draft: false
 ---
