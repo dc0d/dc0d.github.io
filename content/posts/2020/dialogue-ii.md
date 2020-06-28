@@ -79,6 +79,12 @@ Imagine that the code is written in a way that makes any sort of changes - from 
 
 Your rival can grow in your target market 86'400'000 times per day, faster than you - if her/his code has a better design and can react to changes in business requirements faster.
 
+So, tell me:
+
+- How many times are you going to write/update the code each day?
+- How many times are you going to read the code each day?
+- How many times are you going to run that code each day?
+
 It's not just about a code that just works.
 
 _Nothing justifies putting bad code into production - a “temporary hack” or whatever_. And we can come up with all sorts of colorful and creative excuses - some of them are even “professional” terms, from all departments. And yes; we can push programmers - to an extent that they don’t care anymore. Kind of like an I-am-just-following-the-orders situation, you know. To make people in charge happy. Somehow like charts and diagrams which make people happy!
