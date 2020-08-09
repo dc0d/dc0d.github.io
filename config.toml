@@ -1,6 +1,6 @@
 baseURL = "https://www.shahbazian.link/"
 title = "sketches"
-# copyright = "© Copyright Notice | Kaveh Shahbazian"
+copyright = "© Copyright Notice | Kaveh Shahbazian"
 
 languageCode = "en-us"
 defaultContentLanguage = "en"
@@ -69,7 +69,7 @@ pygmentsstyle = "colorful"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-googleAnalytics = ""
+googleAnalytics = "UA-71617817-1"
 disqusShortname = ""
 
 enableEmoji = true
