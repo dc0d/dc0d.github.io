@@ -1,6 +1,6 @@
 baseURL = "https://www.shahbazian.link/"
 title = "sketches"
-copyright = "© Copyright Notice | Kaveh Shahbazian"
+# copyright = "© Copyright Notice | Kaveh Shahbazian"
 
 languageCode = "en-us"
 defaultContentLanguage = "en"
@@ -8,6 +8,17 @@ author = "Kaveh Shahbazian"
 
 paginate = 9
 preserveTaxonomyNames = true
+
+enableRobotsTXT = true
+
+pygmentsstyle = "colorful"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = "UA-71617817-1"
+disqusShortname = ""
+
+enableEmoji = true
 
 #
 
@@ -62,17 +73,6 @@ url = "mailto:kaveh@shahbazian.link"
 
 [params.comments]
 enable = false
-
-enableRobotsTXT = true
-
-pygmentsstyle = "colorful"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-googleAnalytics = "UA-71617817-1"
-disqusShortname = ""
-
-enableEmoji = true
 
 [params.info]
 title404 = "Nothing's here!"
