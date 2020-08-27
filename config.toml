@@ -61,7 +61,7 @@ url = "mailto:kaveh@shahbazian.link"
 
 [params]
 	nofeedSections = ["microlog"]
-	keywords = ["programming","software development","golang","tdd","agile"]
+	keywords = ["programming","software development","golang","tdd","agile","kaveh shahbazian","blog"]
 	description = "sketches for software development"
 	pagetitle = "sketches for software development"
 	subtitle = "sketches for software development"
