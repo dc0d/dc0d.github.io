@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 	
-	<meta name="generator" content="Hugo 0.74.3" />
+	<meta name="generator" content="Hugo 0.78.2" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -181,22 +181,22 @@ Niklas: We do. But doing anything new is hard, changing or fixing stuff is hard,
 <p><strong>Edmond:</strong> Except in Software Development we are not looking for precise models of the business domain!</p>
 <p><strong><em>Niklas:</em></strong> OK &hellip; Please elaborate.</p>
 <p><strong>Edmond:</strong> The goal is to have a two-way communication channel between business on one hand, and all the way down to the code-base on the other hand. Business requirements change rather fast nowaday. Having a precise model is next to useless. Instead, so far, we established a <em>language</em> that describes the different <em>entities</em> and their <em>behavior</em> in our domain. It&rsquo;s far less often for something technical to affect this language. But now everyone - both business and technical people - speak the same language. They use the same concepts that have a <em>clear</em> (not static) meaning inside a specific context and they react to different <em>commands</em> in our domain by triggering different <em>events</em>.</p>
-<p><strong><em>Niklas:</em></strong> And &hellip; is it a live thing?</p>
-<p><strong>Edmond:</strong> Indeed! Which of course gets mature over time, yet stays vigilant in face of any changes on the business side. And also the technical side - we will come to this part later. Now, we have a clear language for describing our intent and a nice model that specifies the expected behavior in different parts of the system; how a specific bounded context collaborates with the rest of the system, which commands it will handle, how it will react to those commands by triggering different events and what policies and business rules it will apply, based on which, those events will be decided.</p>
+<p><strong><em>Niklas:</em></strong> It sounds like this shared language or shared understanding is less like a static model and more like a control panel which not only drives the business but also drives and guides the technical side - the implementation.</p>
+<p><strong>Edmond:</strong> Indeed! Which of course gets mature over time, yet stays vigilant in face of any changes on the business side. And also the technical side - we will come to this part later. Now, we have a clear language for describing our intent and a nice model that specifies the expected behavior in different parts of the system; how a specific bounded context (you could say a sub-system) collaborates with the rest of the system, which commands it will handle, how it will react to those commands by triggering different events and what policies and business rules it will apply, based on which, those events will be decided.</p>
 <h2 id="planned-programming">Planned Programming</h2>
 <p><strong><em>Niklas:</em></strong> Having a clear language through which everyone can communicate clearly, plus a nice model of our business domain, I can say we are ready to write some code!</p>
 <p><strong>Edmond:</strong> Not quite.</p>
 <p><strong><em>Niklas:</em></strong> But we achieved our goal, right? We have a two-way communication channel between business and all the way down to the code.</p>
 <p><strong>Edmond:</strong> The question still remains: What do you write down? What code do you put inside those files? We need a feedback loop which keeps us on track, to help us to avoid swaying away from our business domain, while we are happily busy building our LEGO towers. Without a feedback loop that proves the focus of the code is on business, and more importantly, proves its correctness according to the expected behavior, you would just be coding the same way that you cook!</p>
 <p><strong><em>Niklas:</em></strong> I do not cook that way. But I understand what you mean. So, please elaborate.</p>
-<p><strong>Edmond:</strong> We need some sort of planned programming. First, we devise a plan for the behavior that we expect from our code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in her/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.</p>
+<p><strong>Edmond:</strong> We need some sort of planned programming. First, we devise a plan for the behavior that we expect from our code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in her/his right mind would place unplanned code into production.</p>
 <p><strong><em>Niklas:</em></strong> Sounds pragmatic. It&rsquo;s almost common sense. How exactly do we plan for what we expect our code to provide?</p>
 <p><strong>Edmond:</strong> This is another one of those solved problems out there. Let&rsquo;s come back to that later. Before getting there, let&rsquo;s get more familiar with the nature of the code at different parts of the system, the application, in our modules and packages and in all the other places.</p>
 <h2 id="three-dimensional-code">Three Dimensional Code</h2>
 <p><strong><em>Niklas:</em></strong> Do you mean the nature of the code changes depending on where it sits?</p>
 <p><strong>Edmond:</strong> It is more precise to say that nature changes depending on the purpose of that code - what it is for. There are three dimensions of purpose for code: how <em>business-specific</em> it is, how <em>application-specific</em> it is, or, how <em>technology-specific</em> it is.</p>
 <p><strong><em>Niklas:</em></strong> Arrrrg! That&rsquo;s almost obvious! Why haven&rsquo;t I thought of it? It explains a <em>lot</em> about our code-base. We have all of them present in all the places of our code-base! We are mixing unrelated stuff in all places.</p>
-<p><strong>Edmond:</strong> I figured that much. Just a heads up, that&rsquo;s not all of mixing unrelated things that you are doing. Yet again let&rsquo;s defer that to later.</p>
+<p><strong>Edmond:</strong> I figured that much. Just a heads up, mixing unrelated things can happen at higher conceptual levels which are also harder to recognize.</p>
 <p><strong><em>Niklas:</em></strong> So are there other aspects to the code?</p>
 <p><strong>Edmond:</strong> Yes, but not at the same space as these three, which we will study in more detail later. Now that we have a clear understanding of the business purpose of our activity, we reached the point where we actually start that activity.</p>
 <p><strong><em>Niklas:</em></strong> Writing some code?</p>
