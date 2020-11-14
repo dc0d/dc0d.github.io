@@ -205,9 +205,9 @@ Imagine this ocean of programming language constructs, definitions, and implemen
 
 **Edmond:** The goal is to have a two-way communication channel between business on one hand, and all the way down to the code-base on the other hand. Business requirements change rather fast nowaday. Having a precise model is next to useless. Instead, so far, we established a _language_ that describes the different _entities_ and their _behavior_ in our domain. It's far less often for something technical to affect this language. But now everyone - both business and technical people - speak the same language. They use the same concepts that have a _clear_ (not static) meaning inside a specific context and they react to different _commands_ in our domain by triggering different _events_.
 
-**_Niklas:_** And ... is it a live thing?
+**_Niklas:_** It sounds like this shared language or shared understanding is less like a static model and more like a control panel which not only drives the business but also drives and guides the technical side - the implementation.
 
-**Edmond:** Indeed! Which of course gets mature over time, yet stays vigilant in face of any changes on the business side. And also the technical side - we will come to this part later. Now, we have a clear language for describing our intent and a nice model that specifies the expected behavior in different parts of the system; how a specific bounded context collaborates with the rest of the system, which commands it will handle, how it will react to those commands by triggering different events and what policies and business rules it will apply, based on which, those events will be decided.
+**Edmond:** Indeed! Which of course gets mature over time, yet stays vigilant in face of any changes on the business side. And also the technical side - we will come to this part later. Now, we have a clear language for describing our intent and a nice model that specifies the expected behavior in different parts of the system; how a specific bounded context (you could say a sub-system) collaborates with the rest of the system, which commands it will handle, how it will react to those commands by triggering different events and what policies and business rules it will apply, based on which, those events will be decided.
 
 
 ## Planned Programming
@@ -223,7 +223,7 @@ Imagine this ocean of programming language constructs, definitions, and implemen
 
 **_Niklas:_** I do not cook that way. But I understand what you mean. So, please elaborate.
 
-**Edmond:** We need some sort of planned programming. First, we devise a plan for the behavior that we expect from our code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in her/his right mind would place unplanned code into production - there is absolutely nothing in this world that justifies that.
+**Edmond:** We need some sort of planned programming. First, we devise a plan for the behavior that we expect from our code - most of the time from a business point of view. Obviously, our plans won’t work at first. Then we write just enough code to make those plans work. And then we stop right there. Because any code written beyond that line is unplanned code. And nobody in her/his right mind would place unplanned code into production.
 
 **_Niklas:_** Sounds pragmatic. It's almost common sense. How exactly do we plan for what we expect our code to provide?
 
@@ -239,7 +239,7 @@ Imagine this ocean of programming language constructs, definitions, and implemen
 
 **_Niklas:_** Arrrrg! That's almost obvious! Why haven't I thought of it? It explains a *lot* about our code-base. We have all of them present in all the places of our code-base! We are mixing unrelated stuff in all places.
 
-**Edmond:** I figured that much. Just a heads up, that's not all of mixing unrelated things that you are doing. Yet again let's defer that to later.
+**Edmond:** I figured that much. Just a heads up, mixing unrelated things can happen at higher conceptual levels which are also harder to recognize.
 
 **_Niklas:_** So are there other aspects to the code?
 
