@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
+<link rel="stylesheet" href="/revealjs/dist/reveal.css" type="text/css">
+<link rel="stylesheet" href="/revealjs/dist/theme/black.css" type="text/css">
+
+</head>
+
+<body>
+
+<div>
+    {{ .Content | safeHTML }}
+</div>
+
+<script src="/revealjs/dist/reveal.js" type="application/javascript"></script>
+<script type="application/javascript">
+    try {
+        let deck = new Reveal();
+        deck.initialize({
+        });
+    } catch(err) {
+        console.log(err);
+    }
+</script>
+
+</body>
+
+</html>
