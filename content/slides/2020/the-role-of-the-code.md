@@ -1,0 +1,116 @@
+---
+title: "The role of the code in our organizations"
+date: 2020-12-05T07:06:00+01:00
+draft: false
+description: Or why no one likes the code?
+---
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <strong>The role of the code in our organizations</strong>
+            <p class="fragment">Or why no one likes the code?</p>
+            <small class="fragment fade-up">(The Source Code)</small>
+            <div class="fragment fade-up">
+                <hr />
+                <small>
+                    (<i>WIP</i> -
+                    <a href="https://twitter.com/__dc0d__"><i>Twitter</i></a> -
+                    <a href="/mailto:kaveh@shahbazian.link"><i>Email</i></a>)
+                </small>
+            </div>
+        </section>
+        <section data-transition="convex">
+            <p>
+                What is code?
+            </p>
+            <p class="fragment">It executes all the steps and the details of the business.</p>
+        </section>
+        <section data-transition="convex">
+            <p>
+                What is code?
+            </p>
+            <p class="fragment">It executes all the steps and the details of the business <i><strong>automatically</strong></i>,</p>
+            <p class="fragment fade-up">thousands of times,</p>
+            <p class="fragment fade-up">every day.</p>
+        </section>
+        <section data-transition="convex">
+            <p>
+                Code is your business rules and policies, validations, workflows.
+            </p>
+            <p class="fragment">It communicates with the customer, before you.</p>
+            <p class="fragment fade-up">It communicates with the customer while you are asleep.</p>
+        </section>
+        <section data-transition="zoom">
+            <p>
+                Which one do we want?
+            </p>
+            <p class="fragment">To screw up thousands of times, every day, automatically?</p>
+            <p class="fragment fade-up">Or to achieve meaningful results, each day?</p>
+        </section>
+        <section data-transition="zoom">
+            <p>
+                People join the company everyday.
+            </p>
+            <p class="fragment">People leave the company everyday.</p>
+            <p class="fragment">It's the code that stays.</p>
+            <p class="fragment">And you have to live with it.</p>
+        </section>
+        <section data-transition="zoom">
+            <p>
+                Why is it hard to understand and measure the value of the code?
+            </p>
+            <p class="fragment">The functionality that the code privides, is a current asset.</p>
+            <p class="fragment">The quality of the code is a long-term liability.</p>
+        </section>
+        <section data-transition="convex">
+            <p>
+                How does the quality of code affect us?
+            </p>
+            <p class="fragment">When the quality of code degrades</p>
+            <p class="fragment fade-up">for the same amount of money</p>
+            <p class="fragment fade-up">during the same time window</p>
+            <p class="fragment fade-up">we get less scope.</p>
+        </section>
+        <section data-transition="convex">
+            <p>
+                How does the quality of code affect us?
+            </p>
+            <p class="fragment">When the quality of code degrades</p>
+            <p class="fragment fade-up">it's hard to fix bugs</p>
+            <p class="fragment fade-up">because there is not enough test coverage.</p>
+        </section>
+        <section data-transition="convex">
+            <p>
+                How does the quality of code affect us?
+            </p>
+            <p class="fragment">When the quality of code degrades</p>
+            <p class="fragment fade-up">it's hard to understand the code</p>
+            <p class="fragment fade-up">because there are not enough specs</p>
+            <p class="fragment fade-up">and text documents and comments in the code</p>
+            <p class="fragment fade-up">get deprecated fast because they are hard to be kept uptodate</p>
+            <p class="fragment fade-up">and the code sways away from them in time.</p>
+        </section>
+        <section data-transition="convex">
+            <p>
+                How does the quality of code affect us?
+            </p>
+            <p class="fragment">When the quality of code degrades</p>
+            <p class="fragment fade-up">it's hard to add new features</p>
+            <p class="fragment fade-up">because the code becomes entangled</p>
+            <p class="fragment fade-up">and it does not communicate its intent</p>
+            <p class="fragment fade-up">and changing anything breaks everything.</p>
+        </section>
+        <section>
+            <p>
+                What is the main factor that affects the design of the system?
+            </p>
+            <small class="fragment">(We will come back to this)</small>
+        </section>
+        <section>
+            <strong>
+                (TODO)
+            </strong>
+        </section>
+    </div>
+</div>

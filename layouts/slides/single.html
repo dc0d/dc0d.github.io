@@ -2,6 +2,18 @@
 
 <head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="programming,software development,golang,tdd,agile,kaveh shahbazian,blog">
+<meta name="description" content="sketches for software development">
+
+<meta property="og:title" content="sketches" />
+<meta property="og:description" content="sketches for software development" />
+<meta property="og:type" content="website" />
+
+<title>sketches</title>
+
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 
@@ -16,12 +28,15 @@
     {{ .Content | safeHTML }}
 </div>
 
+{{ if not .Site.IsServer }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+
 <script src="/revealjs/dist/reveal.js" type="application/javascript"></script>
 <script type="application/javascript">
     try {
         let deck = new Reveal();
-        deck.initialize({
-        });
+        deck.initialize({});
     } catch(err) {
         console.log(err);
     }
