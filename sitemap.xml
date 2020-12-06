@@ -3,17 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.shahbazian.link/slides/2020/</loc>
+    <lastmod>2020-12-05T07:06:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/</loc>
+    <lastmod>2020-12-05T07:06:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/slides/</loc>
+    <lastmod>2020-12-05T07:06:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/slides/2020/the-role-of-the-code/</loc>
+    <lastmod>2020-12-05T07:06:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/latencies/</loc>
     <lastmod>2020-11-29T07:08:52+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.shahbazian.link/microlog/</loc>
-    <lastmod>2020-11-29T07:08:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.shahbazian.link/</loc>
     <lastmod>2020-11-29T07:08:52+01:00</lastmod>
   </url>
   

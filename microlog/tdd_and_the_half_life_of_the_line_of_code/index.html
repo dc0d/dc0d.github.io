@@ -5,6 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="What is the relationship between TDD and the half-life of the line of code?">
+	
+	
 	<meta name="keywords" content="programming,software development,golang,tdd,agile,kaveh shahbazian,blog"><meta name="description" content=""><meta property="og:title" content="What is the relationship between TDD and the half-life of the line of code?" />
 <meta property="og:description" content="So there’s a variable that I didn’t know existed at that time, which is really important for the trade-off about when automated testing is valuable. It is the half-life of the line of code. If you’re in exploration mode and you’re just trying to figure out what a program might do, and most of your experiments are going to be failures and be deleted in a matter of hours or perhaps days, then most of the benefits of TDD don’t kick in, and it slows down the experimentation—a latency between &ldquo;I wonder&rdquo; and &ldquo;I see&rdquo;." />
 <meta property="og:type" content="article" />
@@ -16,24 +20,27 @@
 <meta name="twitter:description" content="So there’s a variable that I didn’t know existed at that time, which is really important for the trade-off about when automated testing is valuable. It is the half-life of the line of code. If you’re in exploration mode and you’re just trying to figure out what a program might do, and most of your experiments are going to be failures and be deleted in a matter of hours or perhaps days, then most of the benefits of TDD don’t kick in, and it slows down the experimentation—a latency between &ldquo;I wonder&rdquo; and &ldquo;I see&rdquo;."/>
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.shahbazian.link/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.shahbazian.link/css/main.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.shahbazian.link/css/all.css" />
-	<link rel="stylesheet" href="https://www.shahbazian.link/css/katex.min.css" crossorigin="anonymous">
-	<script defer src="https://www.shahbazian.link/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-	<script defer src="https://www.shahbazian.link/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>What is the relationship between TDD and the half-life of the line of code? | sketches</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>What is the relationship between TDD and the half-life of the line of code? | sketches</title></head>
 <body><header>
 	
 	<div id="avatar">
 		<a href="https://www.shahbazian.link/">
-			<img src="/images/logo.png" alt="sketches">
+		  <img src="/images/logo.png" alt="sketches">
 		</a>
 	</div>
 	
 	<div id="titletext"><h2 id="title"><a href="https://www.shahbazian.link/">sketches</a></h2></div>
-	<div id="title-description"><p id="subtitle">sketches for software development</p><div id=social>
+	<div id="title-description"><p id="subtitle">sketches for software development</p><div id="social">
 			<nav>
-				<ul><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li><li><a href="https://twitter.com/__dc0d__"><i title="Twitter" class="icons fab fa-twitter"></i></a></li><li><a href="mailto:kaveh@shahbazian.link"><i title="Email" class="icons fas fa-envelope"></i></a></li></ul>
+				<ul>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li>
+					<li><a href="https://twitter.com/__dc0d__"><i title="Twitter" class="icons fab fa-twitter"></i></a></li>
+					<li><a href="/mailto:kaveh@shahbazian.link"><i title="Email" class="icons fas fa-envelope"></i></a></li></ul>
 			</nav>
 		</div>
 	</div>
@@ -45,6 +52,8 @@
 				<li><a href="/">Home</a></li>
 				
 				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/slides">Slides</a></li>
 				
 				<li><a href="/about">About</a></li>
 				
@@ -93,10 +102,10 @@
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://www.forbes.com/sites/oracle/2017/01/09/facebook-guru-and-agile-pioneer-kent-beck-reveals-the-mind-of-the-modern-programmer/?sh=14fd29d363d0#1dce857863d0">Kent Beck Interview</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.forbes.com/sites/oracle/2017/01/09/facebook-guru-and-agile-pioneer-kent-beck-reveals-the-mind-of-the-modern-programmer/?sh=14fd29d363d0#1dce857863d0" target="_blank">Kent Beck Interview</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="https://blogs.oracle.com/javamagazine/interview-with-kent-beck">Complete Interview - from Oracle</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://blogs.oracle.com/javamagazine/interview-with-kent-beck" target="_blank">Complete Interview - from Oracle</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
 <p>IMO, it doesn&rsquo;t seem to be applicable while working on legacy code. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>

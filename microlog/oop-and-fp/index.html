@@ -5,6 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="How is OOP related to FP?">
+	
+	
 	<meta name="keywords" content="programming,software development,golang,tdd,agile,kaveh shahbazian,blog"><meta name="description" content=""><meta property="og:title" content="How is OOP related to FP?" />
 <meta property="og:description" content="Let&rsquo;s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).
 OOP was about message passing Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on different occassions).
@@ -20,24 +24,27 @@ OOP was about message passing Apparently, the language that is most close to the
 Closures &amp; Functional Programming  Here we are cheating a bit, just to communicate better. We can blame things after."/>
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.shahbazian.link/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.shahbazian.link/css/main.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.shahbazian.link/css/all.css" />
-	<link rel="stylesheet" href="https://www.shahbazian.link/css/katex.min.css" crossorigin="anonymous">
-	<script defer src="https://www.shahbazian.link/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-	<script defer src="https://www.shahbazian.link/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>How is OOP related to FP? | sketches</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>How is OOP related to FP? | sketches</title></head>
 <body><header>
 	
 	<div id="avatar">
 		<a href="https://www.shahbazian.link/">
-			<img src="/images/logo.png" alt="sketches">
+		  <img src="/images/logo.png" alt="sketches">
 		</a>
 	</div>
 	
 	<div id="titletext"><h2 id="title"><a href="https://www.shahbazian.link/">sketches</a></h2></div>
-	<div id="title-description"><p id="subtitle">sketches for software development</p><div id=social>
+	<div id="title-description"><p id="subtitle">sketches for software development</p><div id="social">
 			<nav>
-				<ul><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li><li><a href="https://twitter.com/__dc0d__"><i title="Twitter" class="icons fab fa-twitter"></i></a></li><li><a href="mailto:kaveh@shahbazian.link"><i title="Email" class="icons fas fa-envelope"></i></a></li></ul>
+				<ul>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li>
+					<li><a href="https://twitter.com/__dc0d__"><i title="Twitter" class="icons fab fa-twitter"></i></a></li>
+					<li><a href="/mailto:kaveh@shahbazian.link"><i title="Email" class="icons fas fa-envelope"></i></a></li></ul>
 			</nav>
 		</div>
 	</div>
@@ -49,6 +56,8 @@ Closures &amp; Functional Programming  Here we are cheating a bit, just to commu
 				<li><a href="/">Home</a></li>
 				
 				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/slides">Slides</a></li>
 				
 				<li><a href="/about">About</a></li>
 				
@@ -81,7 +90,7 @@ Closures &amp; Functional Programming  Here we are cheating a bit, just to commu
 <div class="markdown">
 <p>Let&rsquo;s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).</p>
 <h1 id="oop-_was_-about-message-passing">OOP <em>was</em> about message passing</h1>
-<p>Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on <a href="https://news.ycombinator.com/item?id=14337970">different</a> <a href="https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented">occassions</a>).</p>
+<p>Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on <a href="https://news.ycombinator.com/item?id=14337970" target="_blank">different</a> <a href="https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented" target="_blank">occassions</a>).</p>
 <h1 id="closures--functional-programming">Closures &amp; Functional Programming</h1>
 <blockquote>
 <p>Here we are cheating a bit, just to communicate better. We can blame things after.</p>
