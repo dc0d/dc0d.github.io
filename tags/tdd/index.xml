@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>TDD on sketches</title>
+		<title>tdd on sketches</title>
 		<link>https://www.shahbazian.link/tags/tdd/</link>
-		<description>Recent content in TDD on www.shahbazian.link</description>
+		<description>Recent content in tdd on www.shahbazian.link</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<lastBuildDate>Sat, 07 Mar 2020 04:58:23 +0100</lastBuildDate>
