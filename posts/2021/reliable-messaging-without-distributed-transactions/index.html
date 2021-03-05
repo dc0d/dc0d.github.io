@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	
+	<meta name="generator" content="Hugo 0.81.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="Reliable Messaging Without Distributed Transactions">
+	
+	
+	<meta name="keywords" content="programming,software development,golang,tdd,agile,kaveh shahbazian,blog"><meta name="description" content=""><meta property="og:title" content="Reliable Messaging Without Distributed Transactions" />
+<meta property="og:description" content="In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-05T22:09:21&#43;01:00" />
+<meta property="article:modified_time" content="2021-03-05T22:09:21&#43;01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reliable Messaging Without Distributed Transactions"/>
+<meta name="twitter:description" content="In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?"/>
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Reliable Messaging Without Distributed Transactions | sketches</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://www.shahbazian.link/">
+		  <img src="/images/logo.png" alt="sketches">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://www.shahbazian.link/">sketches</a></h2></div>
+	<div id="title-description"><p id="subtitle">sketches for software development</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li>
+					<li><a href="https://twitter.com/__dc0d__"><i title="Twitter" class="icons fab fa-twitter"></i></a></li>
+					<li><a href="/mailto:kaveh@shahbazian.link"><i title="Email" class="icons fas fa-envelope"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/slides">Slides</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">05</span>
+				<span class="rest">Mar 2021</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Reliable Messaging Without Distributed Transactions</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<p>In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue? What if the database is updated, but sending the message to the queue fails?</p>
+<p>This description of the problem is for the purpose of demonstration. An example implementation is also provided. The first property of our service - and also the down-stream service - is idempotency<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h1 id="idempotency">Idempotency</h1>
+<p>To achieve idempotency, the service needs to keep track of the incoming events. When the service receives a new message from the queue, the first step is to look up in the list of the incoming messages that are already processed. If the incoming message is already processed, the service will ignore the message and delete it from the queue. This way, in case the service receives a message twice, it will process it only once.</p>
+<p><figure>
+  <img src="/images/2021/idempotency.png" alt="idempotency"  title="idempotency"  />
+</figure></p>
+<p>If the incoming message is a new one, the service will proceed to the next step.</p>
+<h1 id="processing-the-incoming-message">Processing The Incoming Message</h1>
+<p>After making sure that the incoming message is new and not processed yet, the service will process the incoming message and update the entity. It will load the previous state of the entity and changed it based on the new update that it received and the related logic. The data object that persists in the entity, needs to have a special field that will be used for optimistic concurrency which helps to avoid any conflicts while updating an entity. This way, if the entity is being updated by another process in the service, they will not overwrite the changes that are made and one of these two updates will fail.</p>
+<p>But, the entity must be updated in a transaction. Two other tables will change within this transaction.</p>
+<p>The first table is a table for keeping track of incoming messages. Which helps with achieving idempotency.</p>
+<p>The second table contains the outgoing notification messages that the service needs to send out to down-stream listeners.</p>
+<p><figure>
+  <img src="/images/2021/transactional-process.png" alt="transactional-process"  title="transactional-process"  />
+</figure></p>
+<p>After this transaction is completed, the process will delete the incoming message that is successfully processed.</p>
+<h1 id="outgoing-notification">Outgoing Notification</h1>
+<p>A notifier process in the service will poll the outgoing notification messages table. When an outgoing notification appears in the table, the notifier process, will read that message, sends it to a queue, and then delete the record from the queue. To have a smoother stream of notifications, optionally, the main process can trigger the notifier process to wake up and take care of outgoing messages.</p>
+<p><figure>
+  <img src="/images/2021/outgoing-notification.png" alt="outgoing-notification"  title="outgoing-notification"  />
+</figure></p>
+<p>In the provided example, the notification part is implemented using dynamodb streams, which triggers a lambda function that acts as the notifier. In this example, the notifier does not poll the outgoing notification messages table and relies on this feature that is provided by the infrastructure.</p>
+<h1 id="example-implementation">Example Implementation</h1>
+<p>The service is implemented using Go Programming Language. The deployment to AWS Cloud is implemented using AWS CDK, which contains three stacks for data, messaging, and the service. The delivery code can be found inside <code>cmd</code> directory and the core model for the application is inside <code>core</code> directory<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. There are rooms for improvement in the code but the goal was to put forward a demonstration on how these ideas could be put into practice. It can be found in this <a href="https://github.com/dc0d/reliable-messaging" target="_blank">repository</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://vimeo.com/111998645" target="_blank">Reliable Messaging Without Distributed Transactions</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://www.youtube.com/watch?v=dYvSaajboEs" target="_blank">IDD</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+		
+	</div></div>
+
+  </main>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-71617817-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>
