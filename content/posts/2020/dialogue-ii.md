@@ -2,7 +2,7 @@
 title: "What is Software Development?"
 date: 2020-03-07T04:58:23+01:00
 draft: false
-tags: ["Agile", "TDD"]
+tags: ["agile", "tdd"]
 ---
 
 ![alt text](/images/agile-in-practice.png "Agile In Practice")

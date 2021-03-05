@@ -2,7 +2,7 @@
 title: "First"
 date: 2020-02-09T19:00:00+01:00
 draft: false
-tags: ["Notes"]
+tags: ["notes"]
 ---
 
 ![alt text](/images/logo.png "Agile In Practice")
