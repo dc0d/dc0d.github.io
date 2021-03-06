@@ -11,7 +11,7 @@
 		<atom:link href="https://www.shahbazian.link/tags/golang/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>Reliable Messaging Without Distributed Transactions</title>
+			<title>A Study In Reliable Messaging Without Distributed Transactions</title>
 			<link>https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/</link>
 			<pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
 			
