@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.shahbazian.link/microlog/</loc>
+    <lastmod>2021-03-25T09:09:09+02:00</lastmod>
+  </url><url>
+    <loc>https://www.shahbazian.link/microlog/2021/mocks_arent_stubs/</loc>
+    <lastmod>2021-03-25T09:09:09+02:00</lastmod>
+  </url><url>
+    <loc>https://www.shahbazian.link/</loc>
+    <lastmod>2021-03-25T09:09:09+02:00</lastmod>
+  </url><url>
     <loc>https://www.shahbazian.link/posts/2021/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
   </url><url>
@@ -17,9 +26,6 @@
     <loc>https://www.shahbazian.link/posts/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/</loc>
-    <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
     <loc>https://www.shahbazian.link/tags/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
   </url><url>
@@ -32,76 +38,73 @@
     <loc>https://www.shahbazian.link/slides/2020/the-role-of-the-code/</loc>
     <lastmod>2020-12-05T07:06:00+01:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/latencies/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/latencies/</loc>
     <lastmod>2020-11-29T07:08:52+01:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/</loc>
-    <lastmod>2020-11-29T07:08:52+01:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/microlog/tdd_and_the_half_life_of_the_line_of_code/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/tdd_and_the_half_life_of_the_line_of_code/</loc>
     <lastmod>2020-11-15T20:50:57+01:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/idempotent_transactional_service/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/idempotent_transactional_service/</loc>
     <lastmod>2020-09-02T21:18:09+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/what_would_be_an_example_of_lsp_violation/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/what_would_be_an_example_of_lsp_violation/</loc>
     <lastmod>2020-08-27T21:21:23+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/where_to_start/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/where_to_start/</loc>
     <lastmod>2020-08-27T21:21:22+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/isnt_devops_enough/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/isnt_devops_enough/</loc>
     <lastmod>2020-08-27T21:21:21+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_change_code/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_change_code/</loc>
     <lastmod>2020-08-06T20:19:19+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_bring_change/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_bring_change/</loc>
     <lastmod>2020-07-11T21:54:04+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_does_our_language_shape_the_way_we_think/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_does_our_language_shape_the_way_we_think/</loc>
     <lastmod>2020-07-11T21:33:48+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</loc>
     <lastmod>2020-07-11T18:12:48+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_make_writing_the_code_faster/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_make_writing_the_code_faster/</loc>
     <lastmod>2020-07-11T18:03:22+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/ports-and-adapters/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/ports-and-adapters/</loc>
     <lastmod>2020-06-05T06:25:27+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/oop-and-fp/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/oop-and-fp/</loc>
     <lastmod>2020-05-31T01:38:54+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/if_i_were_to_begin_from_the_start/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/if_i_were_to_begin_from_the_start/</loc>
     <lastmod>2020-05-24T23:56:19+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/jez_humble_agile_nad_accelerate/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/jez_humble_agile_nad_accelerate/</loc>
     <lastmod>2020-05-24T21:37:21+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/when_should_we_use_mocks/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/when_should_we_use_mocks/</loc>
     <lastmod>2020-05-24T00:33:23+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_get_the_erlang_version/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_get_the_erlang_version/</loc>
     <lastmod>2020-05-24T00:17:36+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_resize_image_from_command_line_on_mac/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_resize_image_from_command_line_on_mac/</loc>
     <lastmod>2020-05-24T00:15:39+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_have_at_it/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_have_at_it/</loc>
     <lastmod>2020-05-24T00:13:01+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_gee_paw_hill_works/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_gee_paw_hill_works/</loc>
     <lastmod>2020-05-23T23:56:20+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/how_to_avoid_declining_into_irrelevance/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/how_to_avoid_declining_into_irrelevance/</loc>
     <lastmod>2020-05-23T23:49:05+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/is_there_a_better_story_for_test_coverage_in_go/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/is_there_a_better_story_for_test_coverage_in_go/</loc>
     <lastmod>2020-05-23T20:19:15+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/first/</loc>
+    <loc>https://www.shahbazian.link/microlog/2020/first/</loc>
     <lastmod>2020-05-23T04:08:36+02:00</lastmod>
   </url><url>
     <loc>https://www.shahbazian.link/posts/2020/</loc>
