@@ -17,9 +17,9 @@
 			
 			<guid>https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/</guid>
 			<description>
-				
-				In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an ...
-				
+			
+				In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a …
+			
 			</description>
 		</item>
 		

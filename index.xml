@@ -17,9 +17,9 @@
 			
 			<guid>https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/</guid>
 			<description>
-				
-				In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an ...
-				
+			
+				In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a …
+			
 			</description>
 		</item>
 		<item>
@@ -29,9 +29,9 @@
 			
 			<guid>https://www.shahbazian.link/slides/2020/the-role-of-the-code/</guid>
 			<description>
-				
+			
 				Or why no one likes the code?
-				
+			
 			</description>
 		</item>
 		<item>
@@ -41,10 +41,10 @@
 			
 			<guid>https://www.shahbazian.link/posts/2020/dialogue-ii/</guid>
 			<description>
-				
+			
 				 
-  This is a work-in-progress - and will be so for some time. It is picturing how one could think about Software Develo...
-				
+  This is a work-in-progress - and will be so for some time. It is picturing how one could think about Software Development - one of many …
+			
 			</description>
 		</item>
 		<item>
@@ -54,10 +54,10 @@
 			
 			<guid>https://www.shahbazian.link/posts/2020/first/</guid>
 			<description>
-				
+			
 				 
-I have stopped blogging at some point (for the third time). And many things happened during the last year, I decided t...
-				
+I have stopped blogging at some point (for the third time). And many things happened during the last year, I decided to relocate to …
+			
 			</description>
 		</item>
 		<item>
@@ -67,10 +67,10 @@ I have stopped blogging at some point (for the third time). And many things happ
 			
 			<guid>https://www.shahbazian.link/about/</guid>
 			<description>
-				
+			
 				My name is Kaveh Shahbazian. I enjoy programming. These are some sketches for software development.
 
-				
+			
 			</description>
 		</item>
 		
