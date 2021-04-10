@@ -1,5 +1,5 @@
 ---
-title: "Mocks aren't Stubs"
+title: "What is the difference between Mocks and Stubs?"
 date: 2021-03-25T09:09:09+02:00
 draft: false
 ---
