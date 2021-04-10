@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.shahbazian.link/microlog/</loc>
-    <lastmod>2021-03-25T09:09:09+02:00</lastmod>
+    <loc>https://www.shahbazian.link/microlog/2021/testing_without_mocks/</loc>
+    <lastmod>2021-04-10T23:06:23+02:00</lastmod>
   </url><url>
-    <loc>https://www.shahbazian.link/microlog/2021/mocks_arent_stubs/</loc>
-    <lastmod>2021-03-25T09:09:09+02:00</lastmod>
+    <loc>https://www.shahbazian.link/microlog/</loc>
+    <lastmod>2021-04-10T23:06:23+02:00</lastmod>
   </url><url>
     <loc>https://www.shahbazian.link/</loc>
+    <lastmod>2021-04-10T23:06:23+02:00</lastmod>
+  </url><url>
+    <loc>https://www.shahbazian.link/microlog/2021/mocks_arent_stubs/</loc>
     <lastmod>2021-03-25T09:09:09+02:00</lastmod>
   </url><url>
     <loc>https://www.shahbazian.link/posts/2021/</loc>
