@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 	
-	<meta name="generator" content="Hugo 0.82.0" />
+	<meta name="generator" content="Hugo 0.83.1" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +26,17 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
 	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
 	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>A Study In Reliable Messaging Without Distributed Transactions | sketches</title>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>A Study In Reliable Messaging Without Distributed Transactions | sketches</title>
 
 
 </head>
@@ -113,15 +123,18 @@
 </figure></p>
 <p>In the provided example, the notification part is implemented using dynamodb streams, which triggers a lambda function that acts as the notifier. In this example, the notifier does not poll the outgoing notification messages table and relies on this feature that is provided by the infrastructure.</p>
 <h1 id="example-implementation">Example Implementation</h1>
-<p>The service is implemented using Go Programming Language. The deployment to AWS Cloud is implemented using AWS CDK, which contains three stacks for data, messaging, and the service. The delivery code can be found inside <code>cmd</code> directory and the core model for the application is inside <code>core</code> directory<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. There are rooms for improvement in the code but the goal was to put forward a demonstration on how these ideas could be put into practice. It can be found in this <a href="https://github.com/dc0d/reliable-messaging" target="_blank">repository</a>.</p>
+<p>The service is implemented using Go Programming Language. The deployment to AWS Cloud is implemented using AWS CDK, which contains three stacks for data, messaging, and the service. The delivery code can be found inside <code>cmd</code> directory and the core model for the application is inside <code>core</code> directory<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. There are rooms for improvement in the code but the goal was to put forward a demonstration on how these ideas could be put into practice. It can be found in this <a href="https://github.com/dc0d/reliable-messaging" target="_blank">repository</a>
+.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p><a href="https://vimeo.com/111998645" target="_blank">Reliable Messaging Without Distributed Transactions</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://vimeo.com/111998645" target="_blank">Reliable Messaging Without Distributed Transactions</a>
+&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p><a href="https://www.youtube.com/watch?v=dYvSaajboEs" target="_blank">IDD</a> <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://www.youtube.com/watch?v=dYvSaajboEs" target="_blank">IDD</a>
+&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 	
-	<meta name="generator" content="Hugo 0.82.0" />
+	<meta name="generator" content="Hugo 0.83.1" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 	<meta name="keywords" content="programming,software development,golang,tdd,agile,kaveh shahbazian,blog"><meta name="description" content="Let’s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).
 OOP was about message …"><meta property="og:title" content="How is OOP related to FP?" />
 <meta property="og:description" content="Let&rsquo;s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).
-OOP was about message passing Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on different occassions).
+OOP was about message passing Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on different occassions ).
 Closures &amp; Functional Programming  Here we are cheating a bit, just to communicate better. We can blame things after." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.shahbazian.link/microlog/2020/oop-and-fp/" /><meta property="article:section" content="microlog" />
@@ -22,7 +22,7 @@ Closures &amp; Functional Programming  Here we are cheating a bit, just to commu
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How is OOP related to FP?"/>
 <meta name="twitter:description" content="Let&rsquo;s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).
-OOP was about message passing Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on different occassions).
+OOP was about message passing Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on different occassions ).
 Closures &amp; Functional Programming  Here we are cheating a bit, just to communicate better. We can blame things after."/>
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -31,7 +31,17 @@ Closures &amp; Functional Programming  Here we are cheating a bit, just to commu
 	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
 	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
 	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>How is OOP related to FP? | sketches</title>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>How is OOP related to FP? | sketches</title>
 
 
 </head>
@@ -95,7 +105,9 @@ Closures &amp; Functional Programming  Here we are cheating a bit, just to commu
 <div class="markdown">
 <p>Let&rsquo;s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).</p>
 <h1 id="oop-_was_-about-message-passing">OOP <em>was</em> about message passing</h1>
-<p>Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on <a href="https://news.ycombinator.com/item?id=14337970" target="_blank">different</a> <a href="https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented" target="_blank">occassions</a>).</p>
+<p>Apparently, the language that is most close to the original idea of OOP, is &hellip; Erlang! According to Alan Kay (mentioned this on <a href="https://news.ycombinator.com/item?id=14337970" target="_blank">different</a>
+ <a href="https://www.quora.com/What-does-Alan-Kay-think-about-Joe-Armstrong-claiming-that-Erlang-might-be-the-only-object-oriented-language-and-also-his-thesis-supervisor-s-claim-that-Erlang-is-extremely-object-oriented" target="_blank">occassions</a>
+).</p>
 <h1 id="closures--functional-programming">Closures &amp; Functional Programming</h1>
 <blockquote>
 <p>Here we are cheating a bit, just to communicate better. We can blame things after.</p>
