@@ -2,7 +2,7 @@
 title: "A Study In Reliable Messaging Without Distributed Transactions"
 date: 2021-03-05T22:09:21+01:00
 draft: false
-tags: ["aws", "golang"]
+tags: ["aws", "golang", "typescript"]
 ---
 
 In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue? What if the database is updated, but sending the message to the queue fails?
@@ -34,7 +34,7 @@ After this transaction is completed, the process will delete the incoming messag
 
 # Outgoing Notification
 
-A notifier process in the service will poll the outgoing notification messages table. When an outgoing notification appears in the table, the notifier process, will read that message, sends it to a queue, and then delete the record from the queue. To have a smoother stream of notifications, optionally, the main process can trigger the notifier process to wake up and take care of outgoing messages.
+A notifier process in the service will poll the outgoing notification messages table. When an outgoing notification appears in the table, the notifier process, will read that message, sends it to a queue, and then delete the record from the queue. To have a smoother stream of notifications, optionally, the main process can trigger the notifier process to wake up and take care of outgoing messages[^2].
 
 ![outgoing-notification](/images/2021/outgoing-notification.png "outgoing-notification")
 
@@ -42,7 +42,8 @@ In the provided example, the notification part is implemented using dynamodb str
 
 # Example Implementation
 
-The service is implemented using Go Programming Language. The deployment to AWS Cloud is implemented using AWS CDK, which contains three stacks for data, messaging, and the service. The delivery code can be found inside `cmd` directory and the core model for the application is inside `core` directory[^2]. There are rooms for improvement in the code but the goal was to put forward a demonstration on how these ideas could be put into practice. It can be found in this [repository](https://github.com/dc0d/reliable-messaging).
+The service is implemented using Go Programming Language. The deployment to AWS Cloud is implemented using AWS CDK, which contains three stacks for data, messaging, and the service. The delivery code can be found inside `cmd` directory and the core model for the application is inside `core` directory[^3]. There are rooms for improvement in the code but the goal was to put forward a demonstration on how these ideas could be put into practice. It can be found in this [repository](https://github.com/dc0d/reliable-messaging).
 
 [^1]: [Reliable Messaging Without Distributed Transactions](https://vimeo.com/111998645)
-[^2]: [IDD](https://www.youtube.com/watch?v=dYvSaajboEs)
+[^2]: [Transactional outbox](https://microservices.io/patterns/data/transactional-outbox.html)
+[^3]: [IDD](https://www.youtube.com/watch?v=dYvSaajboEs)
