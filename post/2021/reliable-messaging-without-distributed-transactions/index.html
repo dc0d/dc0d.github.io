@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>A Study In Reliable Messaging Without Distributed Transactions - sketches</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Kaveh Shahbazian" /><meta name="description" content="In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?" /><meta name="keywords" content="sketches, golang, tdd" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.91.2 with theme even" />
+
+
+<link rel="canonical" href="https://www.shahbazian.link/post/2021/reliable-messaging-without-distributed-transactions/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="A Study In Reliable Messaging Without Distributed Transactions" />
+<meta property="og:description" content="In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.shahbazian.link/post/2021/reliable-messaging-without-distributed-transactions/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-05T22:09:21+01:00" />
+<meta property="article:modified_time" content="2021-03-05T22:09:21+01:00" />
+
+<meta itemprop="name" content="A Study In Reliable Messaging Without Distributed Transactions">
+<meta itemprop="description" content="In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?"><meta itemprop="datePublished" content="2021-03-05T22:09:21+01:00" />
+<meta itemprop="dateModified" content="2021-03-05T22:09:21+01:00" />
+<meta itemprop="wordCount" content="597">
+<meta itemprop="keywords" content="aws,golang,typescript," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Study In Reliable Messaging Without Distributed Transactions"/>
+<meta name="twitter:description" content="In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">sketches</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">sketches</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">A Study In Reliable Messaging Without Distributed Transactions</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-03-05 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#idempotency">Idempotency</a></li>
+    <li><a href="#processing-the-incoming-message">Processing The Incoming Message</a></li>
+    <li><a href="#outgoing-notification">Outgoing Notification</a></li>
+    <li><a href="#example-implementation">Example Implementation</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue? What if the database is updated, but sending the message to the queue fails?</p>
+<p>This description of the problem is for the purpose of demonstration. An example implementation is also provided. The first property of our service - and also the down-stream service - is idempotency<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h1 id="idempotency">Idempotency</h1>
+<p>To achieve idempotency, the service needs to keep track of the incoming events. When the service receives a new message from the queue, the first step is to look up in the list of the incoming messages that are already processed. If the incoming message is already processed, the service will ignore the message and delete it from the queue. This way, in case the service receives a message twice, it will process it only once.</p>
+<p><img src="/images/2021/idempotency.png" alt="idempotency" title="idempotency"></p>
+<p>If the incoming message is a new one, the service will proceed to the next step.</p>
+<h1 id="processing-the-incoming-message">Processing The Incoming Message</h1>
+<p>After making sure that the incoming message is new and not processed yet, the service will process the incoming message and update the entity. It will load the previous state of the entity and changed it based on the new update that it received and the related logic. The data object that persists in the entity, needs to have a special field that will be used for optimistic concurrency which helps to avoid any conflicts while updating an entity. This way, if the entity is being updated by another process in the service, they will not overwrite the changes that are made and one of these two updates will fail.</p>
+<p>But, the entity must be updated in a transaction. Two other tables will change within this transaction.</p>
+<p>The first table is a table for keeping track of incoming messages. Which helps with achieving idempotency.</p>
+<p>The second table contains the outgoing notification messages that the service needs to send out to down-stream listeners.</p>
+<p><img src="/images/2021/transactional-process.png" alt="transactional-process" title="transactional-process"></p>
+<p>After this transaction is completed, the process will delete the incoming message that is successfully processed.</p>
+<h1 id="outgoing-notification">Outgoing Notification</h1>
+<p>A notifier process in the service will poll the outgoing notification messages table. When an outgoing notification appears in the table, the notifier process, will read that message, sends it to a queue, and then delete the record from the queue. To have a smoother stream of notifications, optionally, the main process can trigger the notifier process to wake up and take care of outgoing messages<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p><img src="/images/2021/outgoing-notification.png" alt="outgoing-notification" title="outgoing-notification"></p>
+<p>In the provided example, the notification part is implemented using dynamodb streams, which triggers a lambda function that acts as the notifier. In this example, the notifier does not poll the outgoing notification messages table and relies on this feature that is provided by the infrastructure.</p>
+<h1 id="example-implementation">Example Implementation</h1>
+<p>The service is implemented using Go Programming Language. The deployment to AWS Cloud is implemented using AWS CDK, which contains three stacks for data, messaging, and the service. The delivery code can be found inside <code>cmd</code> directory and the core model for the application is inside <code>core</code> directory<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. There are rooms for improvement in the code but the goal was to put forward a demonstration on how these ideas could be put into practice. It can be found in this <a href="https://github.com/dc0d/reliable-messaging">repository</a>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://vimeo.com/111998645">Reliable Messaging Without Distributed Transactions</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://microservices.io/patterns/data/transactional-outbox.html">Transactional outbox</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://www.youtube.com/watch?v=dYvSaajboEs">IDD</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Kaveh Shahbazian</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2021-03-05
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/aws/">aws</a>
+          <a href="/tags/golang/">golang</a>
+          <a href="/tags/typescript/">typescript</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/2020/dialogue-ii/">
+            <span class="next-text nav-default">What is Software Development?</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:kaveh@shahbazian.link" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/54467/kaveh-shahbazian?tab=profile" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/__dc0d__" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://se.linkedin.com/in/kavehshahbazian" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/dc0d" class="iconfont icon-github" title="github"></a>
+  <a href="https://www.shahbazian.link/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>© Copyright Notice | Kaveh Shahbazian</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

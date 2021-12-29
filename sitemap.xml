@@ -1,141 +1,303 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="https://www.shahbazian.link/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
     <loc>https://www.shahbazian.link/microlog/2021/testing_without_mocks/</loc>
     <lastmod>2021-04-10T23:06:23+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/</loc>
     <lastmod>2021-04-10T23:06:23+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/</loc>
     <lastmod>2021-04-10T23:06:23+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2021/mocks_arent_stubs/</loc>
     <lastmod>2021-03-25T09:09:09+02:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/posts/2021/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/post/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/post/2021/reliable-messaging-without-distributed-transactions/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/aws/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/golang/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/posts/</loc>
-    <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/typescript/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/slides/2020/</loc>
     <lastmod>2020-12-05T07:06:00+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/slides/</loc>
     <lastmod>2020-12-05T07:06:00+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/slides/2020/the-role-of-the-code/</loc>
     <lastmod>2020-12-05T07:06:00+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/latencies/</loc>
     <lastmod>2020-11-29T07:08:52+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/tdd_and_the_half_life_of_the_line_of_code/</loc>
     <lastmod>2020-11-15T20:50:57+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/idempotent_transactional_service/</loc>
     <lastmod>2020-09-02T21:18:09+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/what_would_be_an_example_of_lsp_violation/</loc>
     <lastmod>2020-08-27T21:21:23+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/where_to_start/</loc>
     <lastmod>2020-08-27T21:21:22+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/isnt_devops_enough/</loc>
     <lastmod>2020-08-27T21:21:21+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_change_code/</loc>
     <lastmod>2020-08-06T20:19:19+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_bring_change/</loc>
     <lastmod>2020-07-11T21:54:04+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_does_our_language_shape_the_way_we_think/</loc>
     <lastmod>2020-07-11T21:33:48+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</loc>
     <lastmod>2020-07-11T18:12:48+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_make_writing_the_code_faster/</loc>
     <lastmod>2020-07-11T18:03:22+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/ports-and-adapters/</loc>
     <lastmod>2020-06-05T06:25:27+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/oop-and-fp/</loc>
     <lastmod>2020-05-31T01:38:54+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/if_i_were_to_begin_from_the_start/</loc>
     <lastmod>2020-05-24T23:56:19+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/jez_humble_agile_nad_accelerate/</loc>
     <lastmod>2020-05-24T21:37:21+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/when_should_we_use_mocks/</loc>
     <lastmod>2020-05-24T00:33:23+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_get_the_erlang_version/</loc>
     <lastmod>2020-05-24T00:17:36+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_resize_image_from_command_line_on_mac/</loc>
     <lastmod>2020-05-24T00:15:39+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_have_at_it/</loc>
     <lastmod>2020-05-24T00:13:01+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_gee_paw_hill_works/</loc>
     <lastmod>2020-05-23T23:56:20+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/how_to_avoid_declining_into_irrelevance/</loc>
     <lastmod>2020-05-23T23:49:05+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/is_there_a_better_story_for_test_coverage_in_go/</loc>
     <lastmod>2020-05-23T20:19:15+02:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/microlog/2020/first/</loc>
     <lastmod>2020-05-23T04:08:36+02:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/posts/2020/</loc>
-    <lastmod>2020-03-07T04:58:23+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/agile/</loc>
     <lastmod>2020-03-07T04:58:23+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/tdd/</loc>
     <lastmod>2020-03-07T04:58:23+01:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/posts/2020/dialogue-ii/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/post/2020/dialogue-ii/</loc>
     <lastmod>2020-03-07T04:58:23+01:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/posts/2020/first/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/post/2020/first/</loc>
     <lastmod>2020-02-09T19:00:00+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/tags/notes/</loc>
     <lastmod>2020-02-09T19:00:00+01:00</lastmod>
-  </url><url>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shahbazian.link/about/</loc>
     <lastmod>2020-02-09T18:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://www.shahbazian.link/categories/</loc>
-  </url><url>
-    <loc>https://www.shahbazian.link/series/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
+  
+  <url>
+    <loc>https://www.shahbazian.link/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>

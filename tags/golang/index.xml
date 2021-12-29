@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>golang on sketches</title>
-		<link>https://www.shahbazian.link/tags/golang/</link>
-		<description>Recent content in golang on www.shahbazian.link</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate>
-		
-		<atom:link href="https://www.shahbazian.link/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>A Study In Reliable Messaging Without Distributed Transactions</title>
-			<link>https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/</link>
-			<pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/posts/2021/reliable-messaging-without-distributed-transactions/</guid>
-			<description>
-			
-				In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a …
-			
-			</description>
-		</item>
-		
-	</channel>
+  <channel>
+    <title>golang on sketches</title>
+    <link>https://www.shahbazian.link/tags/golang/</link>
+    <description>Recent content in golang on sketches</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
+    <lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate><atom:link href="https://www.shahbazian.link/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Study In Reliable Messaging Without Distributed Transactions</title>
+      <link>https://www.shahbazian.link/post/2021/reliable-messaging-without-distributed-transactions/</link>
+      <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/post/2021/reliable-messaging-without-distributed-transactions/</guid>
+      <description>In a Microservice Architecture, some services update an entity. A service that updates an entity, might need to send an event to a down-stream service, to inform it about the update. The problem is, these two actions - updating a database and sending a message to a queue - can not be guaranteed to be completed transactionally. What if updating the database fails, but a message be sent to the queue?</description>
+    </item>
+    
+  </channel>
 </rss>

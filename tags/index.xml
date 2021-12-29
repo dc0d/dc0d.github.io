@@ -1,87 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Tags on sketches</title>
-		<link>https://www.shahbazian.link/tags/</link>
-		<description>Recent content in Tags on www.shahbazian.link</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate>
-		
-		<atom:link href="https://www.shahbazian.link/tags/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>aws</title>
-			<link>https://www.shahbazian.link/tags/aws/</link>
-			<pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/tags/aws/</guid>
-			<description>
-			
-				
-			
-			</description>
-		</item>
-		<item>
-			<title>golang</title>
-			<link>https://www.shahbazian.link/tags/golang/</link>
-			<pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/tags/golang/</guid>
-			<description>
-			
-				
-			
-			</description>
-		</item>
-		<item>
-			<title>typescript</title>
-			<link>https://www.shahbazian.link/tags/typescript/</link>
-			<pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/tags/typescript/</guid>
-			<description>
-			
-				
-			
-			</description>
-		</item>
-		<item>
-			<title>agile</title>
-			<link>https://www.shahbazian.link/tags/agile/</link>
-			<pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/tags/agile/</guid>
-			<description>
-			
-				
-			
-			</description>
-		</item>
-		<item>
-			<title>tdd</title>
-			<link>https://www.shahbazian.link/tags/tdd/</link>
-			<pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/tags/tdd/</guid>
-			<description>
-			
-				
-			
-			</description>
-		</item>
-		<item>
-			<title>notes</title>
-			<link>https://www.shahbazian.link/tags/notes/</link>
-			<pubDate>Sun, 09 Feb 2020 19:00:00 +0100</pubDate>
-			
-			<guid>https://www.shahbazian.link/tags/notes/</guid>
-			<description>
-			
-				
-			
-			</description>
-		</item>
-		
-	</channel>
+  <channel>
+    <title>Tags on sketches</title>
+    <link>https://www.shahbazian.link/tags/</link>
+    <description>Recent content in Tags on sketches</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
+    <lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate><atom:link href="https://www.shahbazian.link/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>aws</title>
+      <link>https://www.shahbazian.link/tags/aws/</link>
+      <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://www.shahbazian.link/tags/golang/</link>
+      <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>typescript</title>
+      <link>https://www.shahbazian.link/tags/typescript/</link>
+      <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>agile</title>
+      <link>https://www.shahbazian.link/tags/agile/</link>
+      <pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tdd</title>
+      <link>https://www.shahbazian.link/tags/tdd/</link>
+      <pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>https://www.shahbazian.link/tags/notes/</link>
+      <pubDate>Sun, 09 Feb 2020 19:00:00 +0100</pubDate>
+      
+      <guid>https://www.shahbazian.link/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>
