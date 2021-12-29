@@ -1,19 +1,18 @@
 ---
-title: "How does GeePaw Hill work?"
+title: 'How does GeePaw Hill work?'
 date: 2020-05-23T23:56:20+02:00
 draft: false
 ---
 
 ### Tweet thread:
 
-{{< tweet 1198354786049019905 >}}
+{{< tweet user="GeePawHill" id="1198354786049019905" >}}
 
 ### Unrolled [thread](https://threadreaderapp.com/thread/1198354786049019905.html):
 
-
 > When I'm programming, I am centered broadly on the cyclical application of small textual changes, each one producing value I then harvest to identify, enable, or energize the next.
 >
-> Before we dig in: This is how *I* roll code. It is not a prescription of any kind for you. I have a prescription for you, and I can offer it, but it has almost nothing to do with what you'll read here. These are details. The prescriptions are at a much higher level.
+> Before we dig in: This is how _I_ roll code. It is not a prescription of any kind for you. I have a prescription for you, and I can offer it, but it has almost nothing to do with what you'll read here. These are details. The prescriptions are at a much higher level.
 >
 > You do you.
 >
@@ -21,9 +20,9 @@ draft: false
 >
 > I use an IDE because I like my tools to know as much and sometimes even more than I do about my language, my libraries, and my project. I've found them quite useful to me in dynamically typed languages and invaluable to me in static ones.
 >
-> Left to my own devices, I use git for my source vault. (Like any long-time geek, I've used'em all.) I use git *very* simply. I avoid cherry-picking changes. I avoid manual merges. I live branchlessly, pulling from head, pushing to head, testing at head.
+> Left to my own devices, I use git for my source vault. (Like any long-time geek, I've used'em all.) I use git _very_ simply. I avoid cherry-picking changes. I avoid manual merges. I live branchlessly, pulling from head, pushing to head, testing at head.
 >
-> 90% of my git usage is contained in just three commands: pull -r, commit -m, and push. I use the root dir for all of that. When I *do* get stuck with a manual merge of any kind or size, I normally just emit obscenities, throw away my change, and do it again.
+> 90% of my git usage is contained in just three commands: pull -r, commit -m, and push. I use the root dir for all of that. When I _do_ get stuck with a manual merge of any kind or size, I normally just emit obscenities, throw away my change, and do it again.
 >
 > Meta 1: as a long time geek, I read maybe 25 or so programming languages. I can write 8, am fluent in five, and am expert in 3: Forth, C/C++, Java/Kotlin. (A little early to claim Kotlin "expert", but the fallback to Java helps.) My dynamics are Python & Ruby.
 >
@@ -71,7 +70,7 @@ draft: false
 >
 > And then I change code. :)
 >
-> In some problems, the bulk of the changes are actually enabling ones. That is, I'm schmooshing the code around typographically w/o changing what it does to get it all lined up for a string of *real* changes.
+> In some problems, the bulk of the changes are actually enabling ones. That is, I'm schmooshing the code around typographically w/o changing what it does to get it all lined up for a string of _real_ changes.
 >
 > The other word for schmoosing code around typographically like that is "refactoring". Because I use an IDE, I use and prefer a lot of automated refactorings, because they're fast and (generally regarded as though not guaranteed in all circumstances to be) safe.
 >
@@ -85,10 +84,10 @@ draft: false
 >
 > I obsess over the size of the changes I make. A typical pull-change-push cycle, in a kotlin app, is something from 3 minutes to 15 in duration. I can go 25-30 if it feels "good, just more time-consuming than I thought". I very rarely persist after 45 minutes. I toss & start over.
 >
-> That thing, "toss and start over", is *super* important and comes as a surprise to a lot of geeks, young and old, who seem to me a little too attached to what they have already typed.
+> That thing, "toss and start over", is _super_ important and comes as a surprise to a lot of geeks, young and old, who seem to me a little too attached to what they have already typed.
 >
-> Typing is easy. Knowing is hard. When I fail at a change after 45 minutes, I'm failing at it because I didn't know what to type. Further, what I typed since I started that change was *ipso facto* not enough to close the change. It is just by-product to me, to be disposed.
-(That's also why I don't normally do hand-merges. Good lord, it's just typing, and it took me as long as it took me largely because I didn't know what it was going to be. Now that I know, I can type it one helluva lot faster.)
+> Typing is easy. Knowing is hard. When I fail at a change after 45 minutes, I'm failing at it because I didn't know what to type. Further, what I typed since I started that change was _ipso facto_ not enough to close the change. It is just by-product to me, to be disposed.
+> (That's also why I don't normally do hand-merges. Good lord, it's just typing, and it took me as long as it took me largely because I didn't know what it was going to be. Now that I know, I can type it one helluva lot faster.)
 >
 > So.
 >
