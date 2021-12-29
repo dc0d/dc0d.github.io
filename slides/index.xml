@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slides on sketches</title>
-    <link>https://www.shahbazian.link/slides/</link>
+    <link>https://www.dc0d.com/slides/</link>
     <description>Recent content in Slides on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 07:06:00 +0100</lastBuildDate><atom:link href="https://www.shahbazian.link/slides/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 07:06:00 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/slides/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

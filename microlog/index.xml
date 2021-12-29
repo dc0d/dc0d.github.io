@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Micrologs on sketches</title>
-    <link>https://www.shahbazian.link/microlog/</link>
+    <link>https://www.dc0d.com/microlog/</link>
     <description>Recent content in Micrologs on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Sat, 10 Apr 2021 23:06:23 +0200</lastBuildDate><atom:link href="https://www.shahbazian.link/microlog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Apr 2021 23:06:23 +0200</lastBuildDate><atom:link href="https://www.dc0d.com/microlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to test without mocks?</title>
-      <link>https://www.shahbazian.link/microlog/2021/testing_without_mocks/</link>
+      <link>https://www.dc0d.com/microlog/2021/testing_without_mocks/</link>
       <pubDate>Sat, 10 Apr 2021 23:06:23 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2021/testing_without_mocks/</guid>
+      <guid>https://www.dc0d.com/microlog/2021/testing_without_mocks/</guid>
       <description>Blog post: Testing Without Mocks: A Pattern Language
 YouTube series: Testing lessons&amp;amp;livestreams of James Shore</description>
     </item>
     
     <item>
       <title>What is the difference between Mocks and Stubs?</title>
-      <link>https://www.shahbazian.link/microlog/2021/mocks_arent_stubs/</link>
+      <link>https://www.dc0d.com/microlog/2021/mocks_arent_stubs/</link>
       <pubDate>Thu, 25 Mar 2021 09:09:09 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2021/mocks_arent_stubs/</guid>
+      <guid>https://www.dc0d.com/microlog/2021/mocks_arent_stubs/</guid>
       <description>Mocks are not Stubs - Martin Fowler
  In this article I&amp;rsquo;ve explained a pair of differences: state or behavior verification / classic or mockist TDD.
    If it&amp;rsquo;s an easy collaboration then the choice is simple. If I&amp;rsquo;m a classic TDDer I don&amp;rsquo;t use a mock, stub or any kind of double. I use a real object and state verification. If I&amp;rsquo;m a mockist TDDer I use a mock and behavior verification.</description>
@@ -31,10 +31,10 @@ YouTube series: Testing lessons&amp;amp;livestreams of James Shore</description>
     
     <item>
       <title>How can we get a tangible feeling about different kinds of latencies?</title>
-      <link>https://www.shahbazian.link/microlog/2020/latencies/</link>
+      <link>https://www.dc0d.com/microlog/2020/latencies/</link>
       <pubDate>Sun, 29 Nov 2020 07:08:52 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/latencies/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/latencies/</guid>
       <description>Source:
 ... and here&amp;#39;s hoping that I&amp;#39;ve fixed all the typos people have pointed out to me from that earlier tweet: pic.twitter.com/3R1reNadXp
 &amp;mdash; Udi Dahan (@UdiDahan) September 9, 2020  </description>
@@ -42,29 +42,29 @@ YouTube series: Testing lessons&amp;amp;livestreams of James Shore</description>
     
     <item>
       <title>What is the relationship between TDD and the half-life of the line of code?</title>
-      <link>https://www.shahbazian.link/microlog/2020/tdd_and_the_half_life_of_the_line_of_code/</link>
+      <link>https://www.dc0d.com/microlog/2020/tdd_and_the_half_life_of_the_line_of_code/</link>
       <pubDate>Sun, 15 Nov 2020 20:50:57 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/tdd_and_the_half_life_of_the_line_of_code/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/tdd_and_the_half_life_of_the_line_of_code/</guid>
       <description>So there’s a variable that I didn’t know existed at that time, which is really important for the trade-off about when automated testing is valuable. It is the half-life of the line of code. If you’re in exploration mode and you’re just trying to figure out what a program might do, and most of your experiments are going to be failures and be deleted in a matter of hours or perhaps days, then most of the benefits of TDD don’t kick in, and it slows down the experimentation—a latency between &amp;ldquo;I wonder&amp;rdquo; and &amp;ldquo;I see&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>How to implement an idempotent transactional service?</title>
-      <link>https://www.shahbazian.link/microlog/2020/idempotent_transactional_service/</link>
+      <link>https://www.dc0d.com/microlog/2020/idempotent_transactional_service/</link>
       <pubDate>Wed, 02 Sep 2020 21:18:09 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/idempotent_transactional_service/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/idempotent_transactional_service/</guid>
       <description> This is draft for a blog post - some day. It is based on a talk by Udi Dahan: Reliable Messaging Without Distributed Transactions.
  </description>
     </item>
     
     <item>
       <title>What would be an example of violation of LSP?</title>
-      <link>https://www.shahbazian.link/microlog/2020/what_would_be_an_example_of_lsp_violation/</link>
+      <link>https://www.dc0d.com/microlog/2020/what_would_be_an_example_of_lsp_violation/</link>
       <pubDate>Thu, 27 Aug 2020 21:21:23 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/what_would_be_an_example_of_lsp_violation/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/what_would_be_an_example_of_lsp_violation/</guid>
       <description> An example of violation of Liskov Substitution Principle (LSP)
  If Square inherits from Rectangle, the problem starts when the intention is to change the width. We expect the height of a rectangle remains the same. But that&amp;rsquo;s not the behavior of a Square.
 It is a behavioral violation of LSP.
@@ -74,10 +74,10 @@ To fix it:
     
     <item>
       <title>Where to start?</title>
-      <link>https://www.shahbazian.link/microlog/2020/where_to_start/</link>
+      <link>https://www.dc0d.com/microlog/2020/where_to_start/</link>
       <pubDate>Thu, 27 Aug 2020 21:21:22 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/where_to_start/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/where_to_start/</guid>
       <description>Stop thinking in terms of language constructs - if statements, calls, etc - and start thinking in terms of concepts.
 Decide what to keep and what to leave out. A class should have one clear responsibility. Everything other than that should be left out - and delegated to collaborators.
 These two together, is a good zero point in programming. Don&amp;rsquo;t fall below zero.</description>
@@ -85,19 +85,19 @@ These two together, is a good zero point in programming. Don&amp;rsquo;t fall be
     
     <item>
       <title>Isn&#39;t DevOps enough?</title>
-      <link>https://www.shahbazian.link/microlog/2020/isnt_devops_enough/</link>
+      <link>https://www.dc0d.com/microlog/2020/isnt_devops_enough/</link>
       <pubDate>Thu, 27 Aug 2020 21:21:21 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/isnt_devops_enough/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/isnt_devops_enough/</guid>
       <description>If you have not adopted a culture of learning and have not moved away from a culture of knowing then it doesn&amp;rsquo;t matter what practices you have adopted; DevOps, Lean, blah, blah.</description>
     </item>
     
     <item>
       <title>How hard is to change code?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_change_code/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_change_code/</link>
       <pubDate>Thu, 06 Aug 2020 20:19:19 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_change_code/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_change_code/</guid>
       <description>Wow! Reality was easier to change than code..
 &amp;mdash; Josemy Duarte (@JosemyD) August 6, 2020   humorous (pun intended - at so many levels)
  </description>
@@ -105,29 +105,29 @@ These two together, is a good zero point in programming. Don&amp;rsquo;t fall be
     
     <item>
       <title>How to bring change?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_bring_change/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_bring_change/</link>
       <pubDate>Sat, 11 Jul 2020 21:54:04 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_bring_change/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_bring_change/</guid>
       <description>You cannot &amp;quot;force... change&amp;quot; if people are not enthusiastic. You&amp;#39;re just beating yourself over the head with a rock if you try. Go find something more gratifying to do. https://t.co/VyaEy50lpW
 &amp;mdash; Allen Holub (@allenholub) July 9, 2020  </description>
     </item>
     
     <item>
       <title>How does our language shape the way we think?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_does_our_language_shape_the_way_we_think/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_does_our_language_shape_the_way_we_think/</link>
       <pubDate>Sat, 11 Jul 2020 21:33:48 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_does_our_language_shape_the_way_we_think/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_does_our_language_shape_the_way_we_think/</guid>
       <description>Follow me to Pormpuraaw, a small Aboriginal community on the western edge of Cape York, in northern Australia. I came here because of the way the locals, the Kuuk Thaayorre, talk about space. Instead of words like &amp;ldquo;right,&amp;rdquo; &amp;ldquo;left,&amp;rdquo; &amp;ldquo;forward,&amp;rdquo; and &amp;ldquo;back,&amp;rdquo; which, as commonly used in English, define space relative to an observer, the Kuuk Thaayorre, like many other Aboriginal groups, use cardinal-direction terms — north, south, east, and west — to define space.</description>
     </item>
     
     <item>
       <title>What problems can there be, if a form of “localized mutation” be used, instead of employing pure state?</title>
-      <link>https://www.shahbazian.link/microlog/2020/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</link>
+      <link>https://www.dc0d.com/microlog/2020/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</link>
       <pubDate>Sat, 11 Jul 2020 18:12:48 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/what_are_some_problems_that_can_show_up_while_using_localized_mutation/</guid>
       <description>(pure as in Haskell)
 It is said that employing pure state, makes reasoning about the code harder.
 Aside from this point, what is the advantage of pure state, over some other approaches to make state mutation safe? (From a developer’s experience point of view, in “real world” - in this context, decided by “majority” - projects)
@@ -136,10 +136,10 @@ Aside from this point, what is the advantage of pure state, over some other appr
     
     <item>
       <title>How to make writing the code faster?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_make_writing_the_code_faster/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_make_writing_the_code_faster/</link>
       <pubDate>Sat, 11 Jul 2020 18:03:22 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_make_writing_the_code_faster/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_make_writing_the_code_faster/</guid>
       <description>Saying Software Development is just writing code, is like saying a carpenter&amp;rsquo;s job is just hammering nails.
 Let&amp;rsquo;s assume the design just falls out of thin air, into our hands, magically - like a sofa taking shape, on its own, while we just hammering the wood, without any need for calculations, measuring, angles, choosing the material, &amp;ldquo;blah, blah, blah&amp;rdquo; - pun intended.
 We might write or edit the code once a week.</description>
@@ -147,10 +147,10 @@ We might write or edit the code once a week.</description>
     
     <item>
       <title>Where to implement Ports in Ports and Adapters?</title>
-      <link>https://www.shahbazian.link/microlog/2020/ports-and-adapters/</link>
+      <link>https://www.dc0d.com/microlog/2020/ports-and-adapters/</link>
       <pubDate>Fri, 05 Jun 2020 06:25:27 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/ports-and-adapters/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/ports-and-adapters/</guid>
       <description>Ports on driver side, are implemented inside the application. Ports on driven side are implemented inside the infrastructure (outside the application).
 Application here can be seen as usecases, which cover the core vocabulary - two inner layers of the onion.
  Ports and Adapters is an architecture also known as Hexagonal Architecture.
@@ -159,10 +159,10 @@ Application here can be seen as usecases, which cover the core vocabulary - two 
     
     <item>
       <title>How is OOP related to FP?</title>
-      <link>https://www.shahbazian.link/microlog/2020/oop-and-fp/</link>
+      <link>https://www.dc0d.com/microlog/2020/oop-and-fp/</link>
       <pubDate>Sun, 31 May 2020 01:38:54 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/oop-and-fp/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/oop-and-fp/</guid>
       <description>Let&amp;rsquo;s assume that we can question everything that is assumed to be a fact (or ask stupid questions - your take).
 OOP was about message passing Apparently, the language that is most close to the original idea of OOP, is &amp;hellip; Erlang! According to Alan Kay (mentioned this on different occassions).
 Closures &amp;amp; Functional Programming  Here we are cheating a bit, just to communicate better. We can blame things after.</description>
@@ -170,10 +170,10 @@ Closures &amp;amp; Functional Programming  Here we are cheating a bit, just to c
     
     <item>
       <title>As a software engineer, if you were to begin from the start what would you change?</title>
-      <link>https://www.shahbazian.link/microlog/2020/if_i_were_to_begin_from_the_start/</link>
+      <link>https://www.dc0d.com/microlog/2020/if_i_were_to_begin_from_the_start/</link>
       <pubDate>Sun, 24 May 2020 23:56:19 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/if_i_were_to_begin_from_the_start/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/if_i_were_to_begin_from_the_start/</guid>
       <description>Triggered by this question on Quora.
  I would start with trying to understand What is Software Development?
 Wasted big time to “tech it”. Different programming languages, different technologies, different databases, “Everybody should use Haskell”, “Everybody should use NoSql”, “MamboJamboScript, is going to take over the world”, and so on and so forth.
@@ -182,20 +182,20 @@ Imagine you join a new team. There is no shared language (human language), no in
     
     <item>
       <title>What does Jez Humble think about Agile in the context of Accelerate?</title>
-      <link>https://www.shahbazian.link/microlog/2020/jez_humble_agile_nad_accelerate/</link>
+      <link>https://www.dc0d.com/microlog/2020/jez_humble_agile_nad_accelerate/</link>
       <pubDate>Sun, 24 May 2020 21:37:21 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/jez_humble_agile_nad_accelerate/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/jez_humble_agile_nad_accelerate/</guid>
       <description>If you’re an expert in Agile, you might not find anything particularly new, but what you will get is a very strong sense of validation, that actually, here’s a scientific approach demonstrating that the stuff you’ve been talking about, how it works and why it works and how it connects to everything else in this space.
 A conversation with Jez Humble on Accelerate: the new book explaining the data and science behind DevOps</description>
     </item>
     
     <item>
       <title>When should we use mocks in TDD?</title>
-      <link>https://www.shahbazian.link/microlog/2020/when_should_we_use_mocks/</link>
+      <link>https://www.dc0d.com/microlog/2020/when_should_we_use_mocks/</link>
       <pubDate>Sun, 24 May 2020 00:33:23 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/when_should_we_use_mocks/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/when_should_we_use_mocks/</guid>
       <description> Mock across architecturally significant boundaries, but not within those boundaries.
 Uncle Bob When to Mock?
  </description>
@@ -203,38 +203,38 @@ Uncle Bob When to Mock?
     
     <item>
       <title>How to get the Erlang version?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_get_the_erlang_version/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_get_the_erlang_version/</link>
       <pubDate>Sun, 24 May 2020 00:17:36 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_get_the_erlang_version/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_get_the_erlang_version/</guid>
       <description>1  $ erl -eval &amp;#39;erlang:display(erlang:system_info(otp_release)), halt().&amp;#39; -noshell   </description>
     </item>
     
     <item>
       <title>How to resize image from command line on mac?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_resize_image_from_command_line_on_mac/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_resize_image_from_command_line_on_mac/</link>
       <pubDate>Sun, 24 May 2020 00:15:39 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_resize_image_from_command_line_on_mac/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_resize_image_from_command_line_on_mac/</guid>
       <description>1  $ sips -Z 512 image.png   </description>
     </item>
     
     <item>
       <title>How to have at it?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_have_at_it/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_have_at_it/</link>
       <pubDate>Sun, 24 May 2020 00:13:01 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_have_at_it/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_have_at_it/</guid>
       <description> The trick is to fix the problem you have, rather than the problem you want.
  Bram Cohen   </description>
     </item>
     
     <item>
       <title>How does GeePaw Hill work?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_gee_paw_hill_works/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_gee_paw_hill_works/</link>
       <pubDate>Sat, 23 May 2020 23:56:20 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_gee_paw_hill_works/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_gee_paw_hill_works/</guid>
       <description>Tweet thread: How I Work: (Just Programming Mix)
 When I&amp;#39;m programming, I am centered broadly on the cyclical application of small textual changes, each one producing value I then harvest to identify, enable, or energize the next.
 &amp;mdash; GeePaw Hill (@GeePawHill) November 23, 2019  Unrolled thread:  When I&amp;rsquo;m programming, I am centered broadly on the cyclical application of small textual changes, each one producing value I then harvest to identify, enable, or energize the next.</description>
@@ -242,30 +242,30 @@ When I&amp;#39;m programming, I am centered broadly on the cyclical application 
     
     <item>
       <title>How to avoid declining into irrelevance?</title>
-      <link>https://www.shahbazian.link/microlog/2020/how_to_avoid_declining_into_irrelevance/</link>
+      <link>https://www.dc0d.com/microlog/2020/how_to_avoid_declining_into_irrelevance/</link>
       <pubDate>Sat, 23 May 2020 23:49:05 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/how_to_avoid_declining_into_irrelevance/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/how_to_avoid_declining_into_irrelevance/</guid>
       <description>Losing your focus on value is the beginning of the end. A long slow but inevitable decline into irrelevance.
 &amp;mdash; Allen Holub (@allenholub) May 22, 2020  </description>
     </item>
     
     <item>
       <title>Is there a better story for test coverage in Go?</title>
-      <link>https://www.shahbazian.link/microlog/2020/is_there_a_better_story_for_test_coverage_in_go/</link>
+      <link>https://www.dc0d.com/microlog/2020/is_there_a_better_story_for_test_coverage_in_go/</link>
       <pubDate>Sat, 23 May 2020 20:19:15 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/is_there_a_better_story_for_test_coverage_in_go/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/is_there_a_better_story_for_test_coverage_in_go/</guid>
       <description>So far, using Go Modules, it is possible to:
 1 2  $ go test -count=1 -coverprofile=./cover/profile.out -covermode=atomic -coverpkg ./... $ go tool cover -html=./cover/profile.out -o ./cover/coverage.html   Still, stuff are missing - maybe a story for another time.</description>
     </item>
     
     <item>
       <title>What is a Microlog entry?</title>
-      <link>https://www.shahbazian.link/microlog/2020/first/</link>
+      <link>https://www.dc0d.com/microlog/2020/first/</link>
       <pubDate>Sat, 23 May 2020 04:08:36 +0200</pubDate>
       
-      <guid>https://www.shahbazian.link/microlog/2020/first/</guid>
+      <guid>https://www.dc0d.com/microlog/2020/first/</guid>
       <description>Micrologs usually contain snippets of interesting stuff from difference sources. It is just like a normal post - in Markdown.
  Keep dates when transferring any old note/snippet/doclet. Title should be a question. Follow AGQ style - when applicable.  </description>
     </item>

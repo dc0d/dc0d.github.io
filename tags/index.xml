@@ -2,63 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on sketches</title>
-    <link>https://www.shahbazian.link/tags/</link>
+    <link>https://www.dc0d.com/tags/</link>
     <description>Recent content in Tags on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate><atom:link href="https://www.shahbazian.link/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aws</title>
-      <link>https://www.shahbazian.link/tags/aws/</link>
+      <link>https://www.dc0d.com/tags/aws/</link>
       <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/tags/aws/</guid>
+      <guid>https://www.dc0d.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://www.shahbazian.link/tags/golang/</link>
+      <link>https://www.dc0d.com/tags/golang/</link>
       <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/tags/golang/</guid>
+      <guid>https://www.dc0d.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>typescript</title>
-      <link>https://www.shahbazian.link/tags/typescript/</link>
+      <link>https://www.dc0d.com/tags/typescript/</link>
       <pubDate>Fri, 05 Mar 2021 22:09:21 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/tags/typescript/</guid>
+      <guid>https://www.dc0d.com/tags/typescript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>agile</title>
-      <link>https://www.shahbazian.link/tags/agile/</link>
+      <link>https://www.dc0d.com/tags/agile/</link>
       <pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/tags/agile/</guid>
+      <guid>https://www.dc0d.com/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tdd</title>
-      <link>https://www.shahbazian.link/tags/tdd/</link>
+      <link>https://www.dc0d.com/tags/tdd/</link>
       <pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/tags/tdd/</guid>
+      <guid>https://www.dc0d.com/tags/tdd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>notes</title>
-      <link>https://www.shahbazian.link/tags/notes/</link>
+      <link>https://www.dc0d.com/tags/notes/</link>
       <pubDate>Sun, 09 Feb 2020 19:00:00 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/tags/notes/</guid>
+      <guid>https://www.dc0d.com/tags/notes/</guid>
       <description></description>
     </item>
     

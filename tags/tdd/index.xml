@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tdd on sketches</title>
-    <link>https://www.shahbazian.link/tags/tdd/</link>
+    <link>https://www.dc0d.com/tags/tdd/</link>
     <description>Recent content in tdd on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Sat, 07 Mar 2020 04:58:23 +0100</lastBuildDate><atom:link href="https://www.shahbazian.link/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Mar 2020 04:58:23 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What is Software Development?</title>
-      <link>https://www.shahbazian.link/post/2020/dialogue-ii/</link>
+      <link>https://www.dc0d.com/post/2020/dialogue-ii/</link>
       <pubDate>Sat, 07 Mar 2020 04:58:23 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/post/2020/dialogue-ii/</guid>
+      <guid>https://www.dc0d.com/post/2020/dialogue-ii/</guid>
       <description>This is a work-in-progress - and will be so for some time. It is picturing how one could think about Software Development - one of many possible ways. Tradeoffs are made - the main goal here was/is to communicate.   Niklas: Something feels broken about all that code we have.
 Edmond: Maybe. But aren&amp;rsquo;t you making money?
 Niklas: We do. But doing anything new is hard, changing or fixing stuff is hard, everything feels so slow, so ineffective.</description>

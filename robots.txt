@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.shahbazian.link/sitemap.xml
+Sitemap: https://www.dc0d.com/sitemap.xml

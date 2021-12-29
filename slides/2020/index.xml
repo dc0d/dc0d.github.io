@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sketches</title>
-    <link>https://www.shahbazian.link/slides/2020/</link>
+    <link>https://www.dc0d.com/slides/2020/</link>
     <description>Recent content on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 07:06:00 +0100</lastBuildDate><atom:link href="https://www.shahbazian.link/slides/2020/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 07:06:00 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/slides/2020/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The role of the code in our organizations</title>
-      <link>https://www.shahbazian.link/slides/2020/the-role-of-the-code/</link>
+      <link>https://www.dc0d.com/slides/2020/the-role-of-the-code/</link>
       <pubDate>Sat, 05 Dec 2020 07:06:00 +0100</pubDate>
       
-      <guid>https://www.shahbazian.link/slides/2020/the-role-of-the-code/</guid>
+      <guid>https://www.dc0d.com/slides/2020/the-role-of-the-code/</guid>
       <description>The role of the code in our organizations Or why no one likes the code?
 (The Source Code)  (WIP - Twitter - Email)     What is code? It executes all the steps and the details of the business.
   What is code? It executes all the steps and the details of the business automatically,
