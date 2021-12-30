@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Fri, 05 Mar 2021 22:09:21 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 21:00:00 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Is a Liability and Must Be Disposable</title>
+      <link>https://www.dc0d.com/post/2021/code-is-a-liability-and-must-be-disposable/</link>
+      <pubDate>Mon, 22 Nov 2021 21:00:00 +0100</pubDate>
+      
+      <guid>https://www.dc0d.com/post/2021/code-is-a-liability-and-must-be-disposable/</guid>
+      <description>All the reduction in revenue comes from the code. All the lost opportunities and overdue time-to-market come from the code. The code causes long lead times. All the bugs come from the code. And for developers all the beautiful weekends, that you could be spent with your kids and your family, but weren&amp;rsquo;t so, come from the code.
+Code is a liability, not an asset. The functionality of it could be an asset, assuming you&amp;rsquo;re building something that someone is willing to pay for it.</description>
+    </item>
+    
     <item>
       <title>A Study In Reliable Messaging Without Distributed Transactions</title>
       <link>https://www.dc0d.com/post/2021/reliable-messaging-without-distributed-transactions/</link>

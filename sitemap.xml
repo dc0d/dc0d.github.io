@@ -2,6 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.dc0d.com/post/</loc>
+    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/post/2021/code-is-a-liability-and-must-be-disposable/</loc>
+    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/tags/programming/</loc>
+    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/</loc>
+    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/tags/</loc>
+    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.dc0d.com/microlog/2021/testing_without_mocks/</loc>
     <lastmod>2021-04-10T23:06:23+02:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,23 +50,10 @@
   </url>
   
   <url>
-    <loc>https://www.dc0d.com/</loc>
-    <lastmod>2021-04-10T23:06:23+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.dc0d.com/microlog/2021/mocks_arent_stubs/</loc>
     <lastmod>2021-03-25T09:09:09+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.dc0d.com/post/</loc>
-    <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -51,13 +72,6 @@
   
   <url>
     <loc>https://www.dc0d.com/tags/golang/</loc>
-    <lastmod>2021-03-05T22:09:21+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.dc0d.com/tags/</loc>
     <lastmod>2021-03-05T22:09:21+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
