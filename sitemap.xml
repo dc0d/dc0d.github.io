@@ -2,34 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.dc0d.com/about/</loc>
+    <lastmod>2020-02-09T18:00:00+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.dc0d.com/post/</loc>
-    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.dc0d.com/post/2021/code-is-a-liability-and-must-be-disposable/</loc>
-    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <loc>https://www.dc0d.com/categories/</loc>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/post/2022/disposable-ideas/</loc>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/categories/journals/</loc>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.dc0d.com/tags/programming/</loc>
-    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.dc0d.com/</loc>
-    <lastmod>2021-11-22T21:00:00+01:00</lastmod>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.dc0d.com/tags/</loc>
+    <lastmod>2022-01-07T15:27:59+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.dc0d.com/post/2021/code-is-a-liability-and-must-be-disposable/</loc>
     <lastmod>2021-11-22T21:00:00+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -297,19 +325,6 @@
   <url>
     <loc>https://www.dc0d.com/tags/notes/</loc>
     <lastmod>2020-02-09T19:00:00+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.dc0d.com/about/</loc>
-    <lastmod>2020-02-09T18:00:00+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.dc0d.com/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

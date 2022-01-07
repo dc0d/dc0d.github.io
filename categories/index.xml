@@ -6,6 +6,16 @@
     <description>Recent content in Categories on sketches</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Copyright Notice | Kaveh Shahbazian</copyright><atom:link href="https://www.dc0d.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
+    <lastBuildDate>Fri, 07 Jan 2022 15:27:59 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>journals</title>
+      <link>https://www.dc0d.com/categories/journals/</link>
+      <pubDate>Fri, 07 Jan 2022 15:27:59 +0100</pubDate>
+      
+      <guid>https://www.dc0d.com/categories/journals/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

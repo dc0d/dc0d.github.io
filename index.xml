@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
-    <lastBuildDate>Mon, 22 Nov 2021 21:00:00 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jan 2022 15:27:59 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://www.dc0d.com/about/</link>
+      <pubDate>Sun, 09 Feb 2020 18:00:00 +0100</pubDate>
+      
+      <guid>https://www.dc0d.com/about/</guid>
+      <description>My name is Kaveh Shahbazian. I enjoy programming. These are some sketches for software development.</description>
+    </item>
+    
+    <item>
+      <title>Disposable Ideas</title>
+      <link>https://www.dc0d.com/post/2022/disposable-ideas/</link>
+      <pubDate>Fri, 07 Jan 2022 15:27:59 +0100</pubDate>
+      
+      <guid>https://www.dc0d.com/post/2022/disposable-ideas/</guid>
+      <description>Key Takeaways  Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts. The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application. The main focus in software development is the running application - not the code.</description>
+    </item>
+    
     <item>
       <title>Code Is a Liability and Must Be Disposable</title>
       <link>https://www.dc0d.com/post/2021/code-is-a-liability-and-must-be-disposable/</link>
@@ -323,15 +341,6 @@ Niklas: We do. But doing anything new is hard, changing or fixing stuff is hard,
       <description>I have stopped blogging at some point (for the third time). And many things happened during the last year, I decided to relocate to another country, experienced a multi-culture life &amp;amp; work atmosphere and tackled the ups and downs.
 Maybe I write about that experience someday. And start blogging again. I do not know yet.
 Squares A and B have the same color.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.dc0d.com/about/</link>
-      <pubDate>Sun, 09 Feb 2020 18:00:00 +0100</pubDate>
-      
-      <guid>https://www.dc0d.com/about/</guid>
-      <description>My name is Kaveh Shahbazian. I enjoy programming. These are some sketches for software development.</description>
     </item>
     
   </channel>

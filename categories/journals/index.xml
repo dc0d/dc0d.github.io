@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>journals on sketches</title>
+    <link>https://www.dc0d.com/categories/journals/</link>
+    <description>Recent content in journals on sketches</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright Notice | Kaveh Shahbazian</copyright>
+    <lastBuildDate>Fri, 07 Jan 2022 15:27:59 +0100</lastBuildDate><atom:link href="https://www.dc0d.com/categories/journals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disposable Ideas</title>
+      <link>https://www.dc0d.com/post/2022/disposable-ideas/</link>
+      <pubDate>Fri, 07 Jan 2022 15:27:59 +0100</pubDate>
+      
+      <guid>https://www.dc0d.com/post/2022/disposable-ideas/</guid>
+      <description>Key Takeaways  Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts. The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application. The main focus in software development is the running application - not the code.</description>
+    </item>
+    
+  </channel>
+</rss>

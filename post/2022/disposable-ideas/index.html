@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Disposable Ideas - sketches</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Kaveh Shahbazian" /><meta name="description" content="Key Takeaways  Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts. The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application. The main focus in software development is the running application - not the code." /><meta name="keywords" content="sketches, golang, tdd" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.91.2 with theme even" />
+
+
+<link rel="canonical" href="https://www.dc0d.com/post/2022/disposable-ideas/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Disposable Ideas" />
+<meta property="og:description" content="Key Takeaways  Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts. The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application. The main focus in software development is the running application - not the code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.dc0d.com/post/2022/disposable-ideas/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-01-07T15:27:59+01:00" />
+<meta property="article:modified_time" content="2022-01-07T15:27:59+01:00" />
+
+<meta itemprop="name" content="Disposable Ideas">
+<meta itemprop="description" content="Key Takeaways  Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts. The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application. The main focus in software development is the running application - not the code."><meta itemprop="datePublished" content="2022-01-07T15:27:59+01:00" />
+<meta itemprop="dateModified" content="2022-01-07T15:27:59+01:00" />
+<meta itemprop="wordCount" content="2054">
+<meta itemprop="keywords" content="programming," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Disposable Ideas"/>
+<meta name="twitter:description" content="Key Takeaways  Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts. The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application. The main focus in software development is the running application - not the code."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">sketches</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">sketches</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Disposable Ideas</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-01-07 </span>
+        <div class="post-category">
+            <a href="/categories/journals/"> journals </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#key-takeaways">Key Takeaways</a></li>
+        <li><a href="#prelude">Prelude</a></li>
+        <li><a href="#disposable-decisions">Disposable Decisions</a></li>
+        <li><a href="#rigid-code--disposable-code">Rigid Code &amp; Disposable Code</a>
+          <ul>
+            <li><a href="#decompose-using-procedural-calls--decompose-using-messages">Decompose Using Procedural Calls &amp; Decompose Using Messages</a></li>
+          </ul>
+        </li>
+        <li><a href="#move-fast--change-fast">Move Fast &amp; Change Fast</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><img src="/images/2022/disposable-ideas.jpg" alt="disposable-ideas" title="https://commons.wikimedia.org/wiki/File:BrokenConcretion22.jpg"></p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>Here a style of thinking - and some questions - about software development is put forward. It is a personal practice in note-taking and communicating thoughts.</li>
+<li>The first step in software development is to run the application, not design or write the code. It was like this, since before Smalltalk. The code is just a representation of the running application.</li>
+<li>The main focus in software development is the running application - not the code. Fixing the bugs is fixing the executions - thousands of them, running per second. The bug is not <em>happening</em> in the code, once, in one place. At each moment, the bug is happening in a system in numerous instances of executions.</li>
+<li>Running application is an asset and must be reliable. Code is a liability and must be disposable.</li>
+</ul>
+<h2 id="prelude">Prelude</h2>
+<p>As humans, we live inside the language. If the language is removed from a human being, the remaining entity will be a mammal, a primate driven by instincts. Many pieces of research show how language shapes our minds. In one such research, a small community was found on the western edge of Cape York, in northern Australia, the Kuuk Thaayorre. While talking about space &ldquo;instead of words like &ldquo;right,&rdquo; &ldquo;left,&rdquo; &ldquo;forward,&rdquo; and &ldquo;back,&rdquo; which, as commonly used in English, define space relative to an observer, the Kuuk Thaayorre, use cardinal-direction terms - north, south, east, and west - to define space.” That property in their language, helps them to be more aware of their surroundings and stay coordinated all the time[^1] - their minds work that way because their language works that way.</p>
+<p>Through language, humans conduct business. From a high-level point of view, a business is a group of humans, as intelligent actors, with a certain level of autonomy, who can understand, process, and execute the language inside a context and make confident choices and decisions. Software development is the process of incorporating an artificial, intelligent agent into the current business workflow, which can process and execute textual instructions, with a certain level of autonomy, and make choices and decisions in the context of those instructions, which is a subset of the context of the business.</p>
+<p>This has some interesting implications. For example, it shows the importance of Ethical AI. Currently, probably for the first time in human history, an autonomous system is created that operates outside of the boundaries of the human language - it operates outside of the human world. Is there an AI shutdown button? It would be very difficult to even define a predicate that could trigger such a shutdown process. How to describe something outside the language?</p>
+<p>The other implication that is closer to the purpose of this text is the need for having a reliable conversation for humans to be able to move the business forward. The idea of structured conversations is pretty well known in many domains and fields. For example, In the field of law, all participants in a courtroom are familiar with a particular vocabulary and understand the mechanics of the interconnections between the concepts defined in that vocabulary. Same stands for different fields of healthcare. All members of a surgical team are fluent in the language, through which they cooperate in moving forward the operation and at the same time keep the vital signs of the patient stable. The smallest sloppiness in interpreting any of the conversations inside the operating room, which are going on between humans, or between humans and devices, can end in the death of the patient. Another domain in which structured conversations are well known in the world of tabletop role-playing games. The players in a tabletop RPG use a conversation system for making a collective judgment about the fiction. The purpose of a structured conversation is for a group of cooperating agents to achieve a collective understanding and come to an agreement about a choice and make a decision.</p>
+<p>It is an interesting observation to see that a structured conversation is readily available to all participants in such different fields, but not in software development. Why? One reason could come from the fact that in software development, we need to work with more than one set of vocabulary from different fields simultaneously. The first conversation framework is for having a structured conversation about the business. The second framework is for having a structured conversation about the technical side. Also, a third framework must be maintained, which maps the vocabulary and the mechanics of the first group of conversations to the second one. DDD paints a detailed landscape in which these areas are pictured in detail. And practical practices like Event Storming can be employed to execute such structured conversations.</p>
+<p>Something that has a special place in this graph of conversations is having an idea about the costs and consequences of the choices made. Succeeding is great. But we need to make sure that the state of success can be maintained, despite the natural fluctuations in the stream of upcoming changes and bugs.</p>
+<h2 id="disposable-decisions">Disposable Decisions</h2>
+<p>If the decisions made are disposable, we can undo them without regret. New decisions are made at each iteration of the whole business conversation cycle, and new requirements and bugs are discovered. These decisions and discoveries will be mapped and translated into a technical conversation. And those technical conversations are transcribed as code and fed into the application. The most brittle link in the chain of a business conversation is the code because it needs to reflect both the business and the technical decisions - all the vocabulary, rules, policies, and predicates that trigger the success or determine the failure in each step. The code contains the history of all conversations that happened in the business. From the business conversation to mapping to technical conversation, including the code, and to the next iteration of the business conversation, an ongoing process of refinement is needed to keep the deviation in vocabulary and mechanics to a minimum - based on the feedback from the previous cycle and the current discoveries and decisions. Since the code is the most inflexible element in the business context, it should be readily disposable without slowing down other business activities.</p>
+<h2 id="rigid-code--disposable-code">Rigid Code &amp; Disposable Code</h2>
+<p>Rigid code is hard to change. It is slow in reacting to the natural stream of changes and bugs. It does not have clear boundaries, and any changes cause never-ending ripples that bounce back to other conversations and affect all aspects of the business. It is full of mysterious patches that no one dares to approach. It sticks, and it is persistent. Disposable code has clear boundaries that make it simpler to unplug an unhealthy component and redirect the flow to a healthy substitute at the same time. It is reusable by design. But not all reusable codes are disposable.</p>
+<p>Here are some causes - choices &amp; decisions - that can make a business conversation end in rigid code or disposable code.</p>
+<h3 id="decompose-using-procedural-calls--decompose-using-messages">Decompose Using Procedural Calls &amp; Decompose Using Messages</h3>
+<p>Coupling appears at both design time and runtime. Design time coupling happens when the technical conversation has not resulted from a well-mapped business conversation. The result is a collection of code artifacts that have multiple natures at the same time. The business-specific code, the application-specific code, and the technology-specific code can be found throughout the whole code-base and inside each other.</p>
+<p>In disposable code, the business-specific parts do not rely on any other kinds of code. This is the core model of an application. Suppose a business policy ends in sending an email the business-specific code sends a message (in OOP terms) to some downstream interactor, behind a protocol, without having any knowledge about it. The interactors are application-specific. They react to the incoming signals and trigger the business-specific code model with a translated signal. Also, they can be triggered by a signal from the core model. In turn, the driven interactors will signal some technology-specific code - which might persist some data inside a database or make a call to a telemetry service.</p>
+<p>The runtime-coupling is created when the availability of one service or resource in the system affects the other ones. This happens when the technical conversation has incorporated some vocabulary and mechanics that are not well mapped/translated from/to the business conversation. One typical decision pattern that ends in runtime-coupling is when a local message sending or a local procedure call is converted to a synchronous remote call. If there are any problems in the local procedure calls, now a new set of the issues is added on top of that, like cases of unavailable services and resources, timeouts, complex retry policies for the remote calls (not the retries for the business logic, which is different) and the like. Synchronous remote procedure calls are helpful mainly for CRUD-base stateless actions when scalability is a concern. They do not address availability because the two services are still tightly coupled.</p>
+<p>For making the different parts of the system loosely-coupled, the same central concept from OOP can be applied, messaging. By hiding implementation behind a message, that part becomes disposable. These two parts can react to changes independently because instead of depending on each other, they depend on a set of shared abstractions: the messages.</p>
+<p>In both cases, disposable code is decomposed using messaging, making polymorphism possible, reducing execution paths. Because the disposable code holds no knowledge about its collaborators, other than the messages they understand, their interface. So it will not decide who will receive that message, the actual collaborator or a double that takes its place and mimics its role (not its implementation), which makes testing the disposable code much faster.</p>
+<h2 id="move-fast--change-fast">Move Fast &amp; Change Fast</h2>
+<p>The execution part of a technical conversation - in this context, the conversation between the human and the device - requires some additional decisions to be made. This technical side of the conversation has some operational costs. It has to be maintained for long periods in a sustainable way. Suppose decisions made on this side are not disposable. The increasing complexity of the interconnections between different parts will make the whole business conversation much slower, ending in longer iterations.</p>
+<p>If the word fast is incorporated into the vocabulary of the business, we need to be aware of its implications. The goal usually is to deliver fast. But if the plan is to move fast, and drop the refinement process, then in the face of new changes or bugs, the system can not react quickly because it is not made that way. These two families of design decisions - the move-fast and the change-fast design decisions - can not easily coexist in the history of all the business conversations: the code. A poetic analogy and parallel to move-fast/change-fast duality is Heisenberg&rsquo;s Uncertainty Principle. This principle indicates that it is not possible to measure both the momentum and position on a particle/wave at the same time. Similarly, the iterations of a business conversation form a wave. Increasing the frequency in this context is the same as increasing the capacity/scope in each iteration. It is impossible to jump to a point in time in the future. And it is not possible to accelerate time. But it is possible to compress business time in another way: by increasing the frequency of its wave. And for increasing the frequency, we need to focus on decisions that help the business react quickly, to focus on change-fast-oriented designs.</p>
+<p>The main focus should be the running application, not the code, to minimize the feedback time. The code is just a representation of the running application. Keeping this focus is a proper approach for verifying if the code is disposable or not. Long feedback loops cause the code to lose its integrity and flexibility. The mindset behind the technical conversation loses its contact with the actual goal and point of focus, which is the application.</p>
+<h2 id="summary">Summary</h2>
+<p>As the code ages, the design decisions made through all the business cycles descend deeper into the system’s structure, like the fossils in different geological layers. If those design decisions are not disposable, it is tough to make any changes, whether changes are coming from a new requirement or a bug. Because the older they are, the more parts depend on them. We should favor the change-fast decisions over move-fast decisions, disposable code vs layer of patches.</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Kaveh Shahbazian</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2022-01-07
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/programming/">programming</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/2021/code-is-a-liability-and-must-be-disposable/">
+            <span class="next-text nav-default">Code Is a Liability and Must Be Disposable</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:dc0d@dc0d.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://stackoverflow.com/users/54467/kaveh-shahbazian?tab=profile" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="https://twitter.com/__dc0d__" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://se.linkedin.com/in/kavehshahbazian" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/dc0d" class="iconfont icon-github" title="github"></a>
+  <a href="https://www.dc0d.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>© Copyright Notice | Kaveh Shahbazian</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-71617817-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
